@@ -38,7 +38,7 @@
     "@types/yup": "0.29.11",
     "antd": "4.10.0",
     "axios": "0.21.1",
-    "blitz": "latest",
+    "blitz": "0.29.3",
     "dayjs": "1.10.2",
     "iotex-antenna": "0.30.4",
     "lodash": "4.17.20",

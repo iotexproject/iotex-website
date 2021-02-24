@@ -6,7 +6,7 @@ export const { styled, css } = createStyled({
   tokens: {
     colors: {
       $bg: "white",
-      $bg2: "#f2f4f5",
+      $bg2: "#24272C",
       $gray500: "hsl(206,10%,76%)",
       $blue500: "hsl(206,100%,50%)",
       $purple500: "hsl(252,78%,60%)",
@@ -48,7 +48,10 @@ export const { styled, css } = createStyled({
     fontWeights: {},
     lineHeights: {},
     letterSpacings: {},
-    sizes: {},
+    sizes: {
+      $mainWxl: "1200px",
+      $mainW: "960px",
+    },
     borderWidths: {},
     borderStyles: {},
     radii: {},
@@ -135,6 +138,12 @@ export const { styled, css } = createStyled({
       flexDirection: value,
       display: "flex",
       justifyContent: "center",
+      alignItems: "center",
+    }),
+    flexLeftCenter: (config) => (value: CSSProperties["flexDirection"] = "row", ) => ({
+      flexDirection: value,
+      display: "flex",
+      justifyContent: "flex-start",
       alignItems: "center",
     }),
   },
