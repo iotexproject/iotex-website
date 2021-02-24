@@ -1,4 +1,6 @@
-# Iotex Dapp Vercel Teamplate
+# iotex website  (WIP)
+
+https://iotex.io 
 
 This directory is a brief example of a [Blitz.js](https://blitzjs.com/) project that can be deployed with Vercel and zero configuration.
 
