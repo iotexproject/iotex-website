@@ -6,11 +6,12 @@ export const { styled, css } = createStyled({
   tokens: {
     colors: {
       $bg: "white",
-      $bg2: "#f2f4f5",
-      $gray500: "hsl(206,10%,76%)",
+      $bg2: "#262626",
+      $gray600: "#666666",
       $blue500: "hsl(206,100%,50%)",
       $purple500: "hsl(252,78%,60%)",
       $green500: "hsl(148,60%,60%)",
+      $green600: "#43C9BA",
     },
     height: {
       $0: "0",
@@ -43,12 +44,14 @@ export const { styled, css } = createStyled({
     },
     fonts: {
       $untitled: "Untitled Sans, apple-system, sans-serif",
-      $mono: "Söhne Mono, menlo, monospace",
+      $ibm: "IBM Plex Sans, sans-serif",
     },
     fontWeights: {},
     lineHeights: {},
     letterSpacings: {},
-    sizes: {},
+    sizes: {
+      $mainW: "1200px",
+    },
     borderWidths: {},
     borderStyles: {},
     radii: {},
@@ -57,10 +60,10 @@ export const { styled, css } = createStyled({
     transitions: {},
   },
   breakpoints: {
-    sm: (rule) => `@media (min-width: 640px) { ${rule} }`,
-    md: (rule) => `@media (min-width: 768px) { ${rule} }`,
-    lg: (rule) => `@media (min-width: 1024px) { ${rule} }`,
-    xl: (rule) => `@media (min-width: 1280px) { ${rule} }`,
+    sm: (rule) => `@media (max-width: 480px) { ${rule} }`,
+    md: (rule) => `@media (max-width: 768px) { ${rule} }`,
+    lg: (rule) => `@media (max-width: 1024px) { ${rule} }`,
+    xl: (rule) => `@media (max-width: 1280px) { ${rule} }`,
   },
   utils: {
     m: (config) => (value) => ({
@@ -119,6 +122,10 @@ export const { styled, css } = createStyled({
       width: value,
       height: value,
     }),
+    fontIbm: (config) => (value) => ({
+      fontFamily: "$ibm",
+      fontWeight: value,
+    }),
     linearGradient: (config) => (value) => ({
       backgroundImage: `linear-gradient(${value})`,
     }),
@@ -131,10 +138,22 @@ export const { styled, css } = createStyled({
       justifyContent: "space-between",
       alignItems: "center",
     }),
+    flexBetweenTop: (config) => (value: CSSProperties["flexDirection"] = "row") => ({
+      flexDirection: value,
+      display: "flex",
+      justifyContent: "space-between",
+      alignItems: "flex-start",
+    }),
     flexCenterCenter: (config) => (value: CSSProperties["flexDirection"] = "row") => ({
       flexDirection: value,
       display: "flex",
       justifyContent: "center",
+      alignItems: "center",
+    }),
+    flexLeftCenter: (config) => (value: CSSProperties["flexDirection"] = "row", ) => ({
+      flexDirection: value,
+      display: "flex",
+      justifyContent: "flex-start",
       alignItems: "center",
     }),
   },
