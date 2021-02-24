@@ -19,19 +19,19 @@ export const Header = observer((props) => {
         key="getStared"
         title={
           <>
-            <span style={{ marginRight: "0.44rem" }}>Get Started</span>
+            <span style={{ marginRight: "0.44rem" }}>{lang.t("get.started")}</span>
             <DownOutlined style={{ color: "#43C9BA" }} />
           </>
         }
       >
         <Menu.Item key="Onboarding Pack">
           <a href="https://iotex.gitbook.io/iotex/vision-and-mission" target="_blank">
-            Onboarding Pack
+            {lang.t("Onboarding Pack")}
           </a>
         </Menu.Item>
         <Menu.Item key="For Developers">
           <a href="https://docs.iotex.io/" target="_blank">
-            For Developers
+            {lang.t("For Developers")}
           </a>
         </Menu.Item>
         <Menu.Item key="For Enterprise">
@@ -39,89 +39,91 @@ export const Header = observer((props) => {
         </Menu.Item>
         <Menu.Item key="For Delegates">
           <a href="https://community.iotex.io/t/official-iotex-delegates-thread/1263">
-            For Delegates
+            {lang.t("For Delegates")}
           </a>
         </Menu.Item>
         <Menu.Item key="Invest in IOTX">
-          <a href="https://iotex.io/for-investors/">Invest in IOTX</a>
+          <a href="https://iotex.io/for-investors/">{lang.t("Invest in IOTX")}</a>
         </Menu.Item>
         <Menu.Item key="FAQ">
-          <a href="https://iotex.io/faq/">FAQ</a>
+          <a href="https://iotex.io/faq/">{lang.t("FAQ")}</a>
         </Menu.Item>
       </SubMenu>
       <SubMenu
         key="Resources"
         title={
           <>
-            <span style={{ marginRight: "0.44rem" }}>Resources</span>
+            <span style={{ marginRight: "0.44rem" }}>{lang.t("Resources")}</span>
             <DownOutlined style={{ color: "#43C9BA" }} />
           </>
         }
       >
-        <Menu.Item key="Onboarding Pack">
-          <a href="https://community.iotex.io/">Community Forum</a>
+        <Menu.Item key="Community Forum">
+          <a href="https://community.iotex.io/">{lang.t("Community Forum")}</a>
         </Menu.Item>
-        <Menu.Item key="For Enterprise">
-          <a href="https://docs.iotex.io/">Dev Docs</a>
+        <Menu.Item key="Dev Docs">
+          <a href="https://docs.iotex.io/">{lang.t("Dev Docs")}</a>
         </Menu.Item>
-        <Menu.Item key="Invest in IOTX">
-          <a href="https://github.com/iotexproject">Github (open-source)</a>
+        <Menu.Item key="Github (open-source)">
+          <a href="https://github.com/iotexproject">{lang.t("Github (open-source)")}</a>
         </Menu.Item>
-        <Menu.Item key="FAQ">
-          <a href="https://burndrop.iotex.io/">Burn-Drop</a>
+        <Menu.Item key="Burn-Drop">
+          <a href="https://burndrop.iotex.io/">{lang.t("Burn-Drop")}</a>
         </Menu.Item>
-        <Menu.Item key="FAQ">
-          <a href="https://codelabs.iotex.io/">Codelabs</a>
+        <Menu.Item key="Codelabs">
+          <a href="https://codelabs.iotex.io/">{lang.t("Codelabs")}</a>
         </Menu.Item>
       </SubMenu>
       <SubMenu
         key="Tools"
         title={
           <>
-            <span style={{ marginRight: "0.44rem" }}>Tools</span>
+            <span style={{ marginRight: "0.44rem" }}>{lang.t("Tools")}</span>
             <DownOutlined style={{ color: "#43C9BA" }} />
           </>
         }
       >
-        <Menu.Item key="Onboarding Pack">
-          <a href="https://member.iotex.io/">Staking Portal</a>
+        <Menu.Item key="Staking Portal">
+          <a href="https://member.iotex.io/">{lang.t("Staking Portal")}</a>
         </Menu.Item>
-        <Menu.Item key="For Enterprise">
-          <a href="https://iopay.iotex.io/">ioPay Wallet</a>
+        <Menu.Item key="ioPay Wallet">
+          <a href="https://iopay.iotex.io/">{lang.t("ioPay Wallet")}</a>
         </Menu.Item>
-        <Menu.Item key="Invest in IOTX">
-          <a href="https://iotexscan.io/">iotexscan Explorer</a>
+        <Menu.Item key="iotexscan Explorer">
+          <a href="https://iotexscan.io/">{lang.t("iotexscan Explorer")}</a>
         </Menu.Item>
-        <Menu.Item key="FAQ">
-          <a href="https://mimo.finance/">mimo DEX</a>
+        <Menu.Item key="mimo DEX">
+          <a href="https://mimo.finance/">{lang.t("mimo DEX")}</a>
         </Menu.Item>
-        <Menu.Item key="FAQ">
-          <a href="https://docs.iotex.io/developer/ioctl/install.html">ioctl CLI</a>
+        <Menu.Item key="ioctl CLI">
+          <a href="https://docs.iotex.io/developer/ioctl/install.html">{lang.t("ioctl CLI")}</a>
         </Menu.Item>
       </SubMenu>
       <SubMenu
         key="Foundation"
         title={
           <>
-            <span style={{ marginRight: "0.44rem" }}>Foundation</span>
+            <span style={{ marginRight: "0.44rem" }}>{lang.t("Foundation")}</span>
             <DownOutlined style={{ color: "#43C9BA" }} />
           </>
         }
       >
-        <Menu.Item key="Onboarding Pack">
-          <a href="https://iott.network/about">Vision</a>
+        <Menu.Item key="Vision">
+          <a href="https://iott.network/about">{lang.t("Vision")}</a>
         </Menu.Item>
-        <Menu.Item key="For Enterprise">
-          <a href="https://iotex.io/team/">Team</a>
+        <Menu.Item key="Team">
+          <a href="https://iotex.io/team/">{lang.t("Team")}</a>
         </Menu.Item>
-        <Menu.Item key="Invest in IOTX">
-          <a href="https://iotex.io/research/">Research</a>
+        <Menu.Item key="Research">
+          <a href="https://iotex.io/research/">{lang.t("Research")}</a>
         </Menu.Item>
-        <Menu.Item key="FAQ">
-          <a href="https://iotex.medium.com/iotex-2021-the-year-ahead-acf743e2df03">Roadmap</a>
+        <Menu.Item key="Roadmap">
+          <a href="https://iotex.medium.com/iotex-2021-the-year-ahead-acf743e2df03">
+            {lang.t("Roadmap")}
+          </a>
         </Menu.Item>
-        <Menu.Item key="FAQ">
-          <a href="https://iotex.medium.com/">Blog</a>
+        <Menu.Item key="Blog">
+          <a href="https://iotex.medium.com/">{lang.t("Blog")}</a>
         </Menu.Item>
       </SubMenu>
       <SubMenu
