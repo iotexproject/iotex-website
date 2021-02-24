@@ -2,6 +2,7 @@ import { BlitzPage } from "blitz"
 import { observer } from "mobx-react-lite"
 import { useStore } from "app/stores"
 import { Header } from "../components/Header"
+import Footer from "../components/Footer"
 import { globalStyles } from "app/utils/styles"
 import { css } from "../utils/stitches.config"
 import Layout from "../layouts/Layout"
@@ -145,6 +146,7 @@ const Home: BlitzPage = observer(() => {
           </div>
         </article>
       </div>
+      <Footer />
     </Layout>
   )
 })
