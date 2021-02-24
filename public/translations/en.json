@@ -83,5 +83,12 @@
   "Team": "Team",
   "Research": "Research",
   "Roadmap": "Roadmap",
-  "Blog": "Blog"
+  "Blog": "Blog",
+  "here": "here",
+  "investors.article.title1": "1. Obtain IOTX in exchanges",
+  "investors.article.title2": "2. Download ioPay1",
+  "investors.article.title3": "3. Login to ioPay",
+  "investors.article.title4": "4. Visit voting website to stake/vote",
+  "investors.article.title5": "5. Select Delegate and Voting Parameters",
+  "investors.article.title6": "6. Sign transaction via ioPay"
 }

@@ -1,19 +1,15 @@
-import { Head, BlitzPage } from "blitz"
+import { BlitzPage } from "blitz"
 import { observer } from "mobx-react-lite"
 import { useStore } from "app/stores"
 import { Header } from "../components/Header"
 import { globalStyles } from "app/utils/styles"
 import { css } from "../utils/stitches.config"
+import Layout from "../layouts/Layout"
 
 const Home: BlitzPage = observer(() => {
   const { lang } = useStore()
   return (
-    <>
-      <Head>
-        <title>{lang.t("home.title")}</title>
-        <link rel="icon" href="/favicon.ico" />
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      </Head>
+    <Layout title={lang.t("home.title")}>
       <div className={styles.iotexAlert}>{lang.t("home.alert.txt")}</div>
       <Header />
       <div className={globalStyles.container}>
@@ -149,7 +145,7 @@ const Home: BlitzPage = observer(() => {
           </div>
         </article>
       </div>
-    </>
+    </Layout>
   )
 })
 
