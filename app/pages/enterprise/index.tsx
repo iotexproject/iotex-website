@@ -2,18 +2,15 @@ import { Head, BlitzPage } from "blitz"
 import { observer } from "mobx-react-lite"
 import { useStore } from "app/stores"
 import { Header } from "../../components/Header"
-import { Form, Input, InputNumber, Button } from "antd"
+import { Form, Input } from "antd"
 import { globalStyles } from "app/utils/styles"
 import { css } from "../../utils/stitches.config"
 
 const validateMessages = {
-  required: "${label} is required!",
+  required: "`required!`",
   types: {
-    email: "${label} is not a valid email!",
-    number: "${label} is not a valid number!",
-  },
-  number: {
-    range: "${label} must be between ${min} and ${max}",
+    email: "not a valid email!",
+    number: "not a valid number!",
   },
 }
 
@@ -39,8 +36,14 @@ const Enterprise: BlitzPage = observer(() => {
             <div className="title">{lang.t("enterprise.lager.title")}</div>
             <div className="subTitle">{lang.t("enterprise.sub.title")}</div>
             <div className="links">
-              <button className="link-btn">{lang.t("enterprise.banner.btn1")}</button>
-              <button className="link-btn">{lang.t("enterprise.banner.btn2")}</button>
+              <button className="link-btn">
+                <a href="#form1">{lang.t("enterprise.banner.btn1")}</a>
+              </button>
+              <button className="link-btn">
+                <a href="https://iotex.io/reference-architecture">
+                  {lang.t("enterprise.banner.btn2")}
+                </a>
+              </button>
             </div>
           </div>
         </article>
@@ -55,19 +58,31 @@ const Enterprise: BlitzPage = observer(() => {
                 <img src="images/leaders3.png" alt="" />
                 <div className="title">{lang.t("enterprise.group1.case1")}</div>
                 <p className="desc">{lang.t("enterprise.group1.desc1")}</p>
-                <button className={styles.learnMore}>{lang.t("learn.more")}</button>
+                <button className={styles.learnMore}>
+                  <a href="https://medium.com/iotex/iotex-amazon-and-huawei-selected-as-co-chairs-of-the-iic-blockchain-task-group-9032b7b7443f">
+                    {lang.t("learn.more")}
+                  </a>
+                </button>
               </li>
               <li>
                 <img src="images/leaders2.png" alt="" />
                 <div className="title">{lang.t("enterprise.group1.case2")}</div>
                 <p className="desc">{lang.t("enterprise.group1.desc2")}</p>
-                <button className={styles.learnMore}>{lang.t("learn.more")}</button>
+                <button className={styles.learnMore}>
+                  <a href="https://medium.com/iotex/iotex-publishes-ieee-reports-on-blockchain-iot-c6650c26f443">
+                    {lang.t("learn.more")}
+                  </a>
+                </button>
               </li>
               <li>
                 <img src="images/leaders1.png" alt="" />
                 <div className="title">{lang.t("enterprise.group1.case3")}</div>
                 <p className="desc">{lang.t("enterprise.group1.desc3")}</p>
-                <button className={styles.learnMore}>{lang.t("learn.more")}</button>
+                <button className={styles.learnMore}>
+                  <a href="https://www.coindesk.com/facebook-iotex-and-r3-among-new-members-of-confidential-computing-consortium">
+                    {lang.t("learn.more")}
+                  </a>
+                </button>
               </li>
             </ul>
           </div>
@@ -104,7 +119,9 @@ const Enterprise: BlitzPage = observer(() => {
               </ul>
               <img className="core-steps" src="images/core-right.png" alt="" />
             </div>
-            <button className={styles.learnMore}>{lang.t("learn.more")}</button>
+            <button className={styles.learnMore}>
+              <a href="https://iotex.io/reference-architecture">{lang.t("learn.more")}</a>
+            </button>
           </div>
         </article>
 
@@ -135,7 +152,7 @@ const Enterprise: BlitzPage = observer(() => {
         </article>
 
         {/* Interested in learning more about IoTeX for Enterprise? */}
-        <article className={styles.enterpriseForm}>
+        <article className={styles.enterpriseForm} id="form1">
           <div className="mw-container" style={{ textAlign: "center" }}>
             <div className={styles.commonTitle}>{lang.t("enterprise.form.title")}</div>
             <div className={styles.tips}>{lang.t("enterprise.form.subtitle")}</div>
@@ -245,6 +262,9 @@ const styles = {
       padding: "0.4rem 2rem",
       boxSizing: "border-box",
       borderRadius: "0.5rem",
+      a: {
+        color: "#fafafa",
+      },
       "&:first-child": {
         marginBottom: "1rem",
         sm: {
@@ -321,10 +341,16 @@ const styles = {
     fontFamily: "Helvetica",
     borderRadius: "0.5rem",
     margin: "auto",
+    a: {
+      color: "#43C9BA",
+    },
     "&:hover": {
       backgroundColor: "#333333",
       borderColor: "#333333",
       color: "#fff",
+      a: {
+        color: "#fff",
+      },
     },
     sm: {
       width: "15rem",
