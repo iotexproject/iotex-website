@@ -1,3 +1,27 @@
 {
-  "hello": "hello ${message}"
+  "hello": "hello ${message}",
+  "home.title": "IoTeX | Building the Internet of Trusted Things",
+  "home.alert.txt": "Burn-Drop is now LIVE! Earn ~20% Annual Percentage Yield and receive $BTC drop >>",
+  "reimagined.title1": "The Internet of Things,",
+  "reimagined.title2": "Reimagined",
+  "reimagined.desc1": "Welcome to the",
+  "reimagined.desc2": "Internet of Trusted Things",
+  "reimagined.desc3": ". IoTeX is on a mission to enable users to own their devices, as well as the data and value they generate.",
+  "reimagined.links1": "IoTeX Vision",
+  "reimagined.links2": "2021 Roadmap",
+  "reimagined.links3": "IoTT Network",
+  "empowering.title1": "Empowering the Future",
+  "empowering.title2": "Machine Economy",
+  "empowering.desc": "The IoTeX platform is open-source and designed to empower a new generation of ultra-secure and privacy-protecting smart devices to fuel the machine economy.",
+  "empowering.links1": "Github (open-source)",
+  "empowering.links2": "Developer Docs",
+  "own.your": "Own Your",
+  "data": "Data",
+  "identity": "Identity",
+  "privacy": "Privacy",
+  "own.desc": "IoTeX combines innovations in blockchain, decentralized identity (DID), and secure hardware to ensure users, not corporations, are in complete control of their digital assets.",
+  "own.links1": "Ucam",
+  "own.links2": "Pebble Tracker",
+  "own.links3": "Decentralized Identity",
+  "enterprise.title": "Enterprise - IoTeX"
 }
