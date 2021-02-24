@@ -7,7 +7,7 @@ import { Header } from "app/components/Header"
 import Footer from "app/components/Footer"
 import { useStore } from "../stores"
 
-const Investors: BlitzPage = observer(() => {
+const ForInvestors: BlitzPage = observer(() => {
   const { lang } = useStore()
 
   return (
@@ -189,7 +189,7 @@ const Investors: BlitzPage = observer(() => {
   )
 })
 
-export default Investors
+export default ForInvestors
 
 const styles = {
   index: css({

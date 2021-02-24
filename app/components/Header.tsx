@@ -43,7 +43,7 @@ export const Header = observer((props) => {
           </a>
         </Menu.Item>
         <Menu.Item key="Invest in IOTX">
-          <a href="https://iotex.io/for-investors/">{lang.t("Invest in IOTX")}</a>
+          <a href="/for-investors">{lang.t("Invest in IOTX")}</a>
         </Menu.Item>
         <Menu.Item key="FAQ">
           <a href="https://iotex.io/faq/">{lang.t("FAQ")}</a>
