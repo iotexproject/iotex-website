@@ -1,4 +1,7 @@
 module.exports = {
+  experimental: {
+    reactMode: "legacy",
+  },
   middleware: [
     (req, res, next) => {
       res.blitzCtx.req = req
