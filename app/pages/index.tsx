@@ -371,7 +371,7 @@ const styles = {
           },
           a: {
             marginRight: "2rem",
-            color: "#333",
+            color: "#fff",
             "&:hover": {
               color: "#43C9BA",
             },
