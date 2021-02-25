@@ -6,6 +6,7 @@ import { css } from "app/utils/stitches.config"
 import { Header } from "app/components/Header"
 import Footer from "app/components/Footer"
 import { useStore } from "../stores"
+import { globalStyles } from "app/utils/styles"
 
 const ForInvestors: BlitzPage = observer(() => {
   const { lang } = useStore()
@@ -13,7 +14,7 @@ const ForInvestors: BlitzPage = observer(() => {
   return (
     <Layout title={"Investors"}>
       <Header/>
-      <div className={`${styles.index}`}>
+      <div className={`${styles.index} ${globalStyles.container}`}>
         <div className={styles.banner}>
           <div className="main-container">
             <div className="left-box">
@@ -197,7 +198,7 @@ const styles = {
     height: "100vh",
     fontIbm: 300,
 
-    sm: {
+    smMax: {
       ".main-container": {
         display: "block"
       },
@@ -234,7 +235,7 @@ const styles = {
     padding: "60px 0",
     mb: 100,
 
-    sm: {
+    smMax: {
       padding: "50px 0",
       mb: 0,
 
@@ -309,7 +310,7 @@ const styles = {
 
   }),
   articleContainer: css({
-    sm: {
+    smMax: {
       padding: "40px 0 30px"
     }
   }),
@@ -317,7 +318,7 @@ const styles = {
     alignItems: "flex-start !important",
     padding: "30px 0 80px",
 
-    sm: {
+    smMax: {
       padding: "40px 0 80px",
 
       ".illustration": {

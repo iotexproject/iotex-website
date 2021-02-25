@@ -58,7 +58,7 @@ const styles = {
     width: "100%",
     pt: 64,
 
-    sm: {
+    smMax: {
       height: "auto"
     }
   }),
@@ -69,7 +69,7 @@ const styles = {
     color: "white",
     fontIbm: 300,
 
-    sm: {
+    smMax: {
       ".menu-wrapper": {
         display: "block",
 

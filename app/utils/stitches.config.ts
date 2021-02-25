@@ -60,10 +60,14 @@ export const { styled, css } = createStyled({
     transitions: {},
   },
   breakpoints: {
-    sm: (rule) => `@media (max-width: 480px) { ${rule} }`,
-    md: (rule) => `@media (max-width: 768px) { ${rule} }`,
-    lg: (rule) => `@media (max-width: 1024px) { ${rule} }`,
-    xl: (rule) => `@media (max-width: 1280px) { ${rule} }`,
+    sm: (rule) => `@media (min-width: 480px) { ${rule} }`,
+    md: (rule) => `@media (min-width: 768px) { ${rule} }`,
+    lg: (rule) => `@media (min-width: 1024px) { ${rule} }`,
+    xl: (rule) => `@media (min-width: 1280px) { ${rule} }`,
+    smMax: (rule) => `@media (max-width: 480px) { ${rule} }`,
+    mdMax: (rule) => `@media (max-width: 768px) { ${rule} }`,
+    lgMax: (rule) => `@media (max-width: 1024px) { ${rule} }`,
+    xlMax: (rule) => `@media (max-width: 1280px) { ${rule} }`,
   },
   utils: {
     m: (config) => (value) => ({
