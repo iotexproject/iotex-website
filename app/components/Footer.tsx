@@ -1,48 +1,61 @@
 import { BlitzPage } from "blitz"
 import { observer } from "mobx-react-lite"
 import { css } from "app/utils/stitches.config"
-import { Row, Col } from 'antd'
+import { useStore } from "../stores"
 
 const Footer: BlitzPage = observer(() => {
+  const { lang } = useStore()
   return (
     <div className={`${styles.footer}`}>
       <div className={styles.mainContainer}>
         <div className="menu-wrapper">
           <div className="menu-box">
-            <h3>Resource</h3>
-            <a>Ecosystem</a>
-            <a>Secure Hardware</a>
-            <a>Community</a>
-            <a>Research Papers</a>
-            <a>Delegate Program</a>
-            <a>Charity Program</a>
+            <h3>{lang.t("resource")}</h3>
+            <a href="https://iotex.io/developers">{lang.t("ecosystem")}</a>
+            <a href="https://iotex.io/secure-hardware">{lang.t("secure_ardware")}</a>
+            <a href="https://iotex.io/community-resources">{lang.t("community")}</a>
+            <a href="https://iotex.io/research">{lang.t("research_papers")}</a>
+            <a href="https://member.iotex.io/">{lang.t("delegate_program")}</a>
+            <a href="https://www.iotex.io/charity">{lang.t("charity_program")}</a>
           </div>
           <div className="menu-box">
-            <h3>Develop</h3>
-            <a>Github</a>
-            <a>Documentations</a>
-            <a>Explorer</a>
-            <a>Wallet</a>
-            <a>Tools</a>
+            <h3>{lang.t("develop")}</h3>
+            <a href="https://github.com/iotexproject">{lang.t("github")}</a>
+            <a href="https://docs.iotex.io/">{lang.t("documentations")}</a>
+            <a href="https://iotexscan.io/">{lang.t("explorer")}</a>
+            <a href="https://iopay.iotex.io/">{lang.t("wallet")}</a>
+            <a href="https://docs.iotex.io/docs/libraries-and-tools.html">{lang.t("tools")}</a>
           </div>
           <div className="menu-box">
-            <h3>About Us</h3>
-            <a>Team</a>
-            <a>Brand Ambassador</a>
-            <a>Forum</a>
+            <h3>{lang.t("about_us")}</h3>
+            <a href="https://iotex.io/team">{lang.t("team")}</a>
+            <a href="https://iotex.io/brand-ambassador">{lang.t("brand_ambassador")}</a>
+            <a href="https://forum.iotex.io/">{lang.t("forum")}</a>
           </div>
           <div className="logo-box">
-            <img src="/images/twitter.png" alt="" />
-            <img src="/images/telegram.png" alt="" />
-            <img src="/images/reddit.png" alt="" />
-            <img src="/images/medium.png" alt="" />
-            <img src="/images/youtube.png" alt="" />
-            <img src="/images/facebook.png" alt="" />
+            <a href="https://twitter.com/iotex_io">
+              <img src="/images/twitter.png" alt="" />
+            </a>
+            <a href="https://t.me/IoTeXGroup">
+              <img src="/images/telegram.png" alt="" />
+            </a>
+            <a href="https://www.reddit.com/r/IoTeX/">
+              <img src="/images/reddit.png" alt="" />
+            </a>
+            <a href="https://medium.com/iotex">
+              <img src="/images/medium.png" alt="" />
+            </a>
+            <a href="https://www.youtube.com/channel/UCdj3xY3LCktuamvuFusWOZw">
+              <img src="/images/youtube.png" alt="" />
+            </a>
+            <a href="https://www.facebook.com/iotex.io/">
+              <img src="/images/facebook.png" alt="" />
+            </a>
           </div>
         </div>
         <div className="copyright">
           <span>© 2020 IoTeX  </span>
-          <a>Terms of Use & Privacy Policy</a>
+          <a href="https://iotex.io/policy">{lang.t("terms_of_use")} & {lang.t("privacy_policy")}</a>
         </div>
       </div>
     </div>

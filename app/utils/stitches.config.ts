@@ -7,6 +7,7 @@ export const { styled, css } = createStyled({
     colors: {
       $bg: "white",
       $bg2: "#262626",
+      $gray50: "#FAFAFA",
       $gray600: "#666666",
       $blue500: "hsl(206,100%,50%)",
       $purple500: "hsl(252,78%,60%)",
@@ -45,6 +46,7 @@ export const { styled, css } = createStyled({
     fonts: {
       $untitled: "Untitled Sans, apple-system, sans-serif",
       $ibm: "IBM Plex Sans, sans-serif",
+      $poppins: "Poppins, sans-serif",
     },
     fontWeights: {},
     lineHeights: {},
@@ -130,6 +132,10 @@ export const { styled, css } = createStyled({
       fontFamily: "$ibm",
       fontWeight: value,
     }),
+    fontPoppins: (config) => (value) => ({
+      fontFamily: "$poppins",
+      fontWeight: value,
+    }),
     linearGradient: (config) => (value) => ({
       backgroundImage: `linear-gradient(${value})`,
     }),
@@ -146,6 +152,12 @@ export const { styled, css } = createStyled({
       flexDirection: value,
       display: "flex",
       justifyContent: "space-between",
+      alignItems: "flex-start",
+    }),
+    flexCenterLeft: (config) => (value: CSSProperties["flexDirection"] = "row") => ({
+      flexDirection: value,
+      display: "flex",
+      justifyContent: "center",
       alignItems: "flex-start",
     }),
     flexCenterCenter: (config) => (value: CSSProperties["flexDirection"] = "row") => ({

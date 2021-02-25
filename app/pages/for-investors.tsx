@@ -19,20 +19,16 @@ const ForInvestors: BlitzPage = observer(() => {
           <div className="main-container">
             <div className="left-box">
               <div className="title">
-                Stake on IoTeX Mainnet GA
+                {lang.t("investors.banner.title")}
               </div>
               <div className="tips">
-                With the major release of Mainnet GA “Machina”, IoTeX has officially established independence from
-                Ethereum
-                and is now a fully native blockchain. From now on, voters will use native IOTX and ioPay to stake and
-                vote
-                on the IoTeX network.
+                {lang.t("investors.banner.tips")}
               </div>
-              <a className="action-stake">
-                Stake now
+              <a className="action-stake" href="https://member.iotex.io/">
+                {lang.t("stake_now")}
               </a>
-              <a className="action-download">
-                → Download ioPay
+              <a className="action-download" href="">
+                → {lang.t("download_iopay")}
               </a>
             </div>
             <div className="right-box">
@@ -47,8 +43,7 @@ const ForInvestors: BlitzPage = observer(() => {
                 {lang.t("investors.article.title1")}
               </div>
               <div className="tips">
-                Native IOTX is supported by many exchanges with popular trading pairs such as IOTX/USDT, IOTX/BTC, etc.
-                You can easily obtain IOTX from the exchanges here.
+                {lang.t("investors.article.tips1")}
               </div>
             </div>
             <div className="right-box illustration">
@@ -61,9 +56,7 @@ const ForInvestors: BlitzPage = observer(() => {
                 {lang.t("investors.article.title2")}
               </div>
               <div className="tips">
-                The official IoTeX wallet, ioPay, is now available for Desktop (Mac, Windows) and Mobile(iOS, Android,
-                APK)! ioPay is not only a great wallet to store your native IOTX, but it also facilitates Native Staking
-                on the IoTeX Mainnet.
+                {lang.t("investors.article.tips2")}
               </div>
             </div>
             <div className="right-box illustration">
@@ -76,16 +69,13 @@ const ForInvestors: BlitzPage = observer(() => {
                 {lang.t("investors.article.title3")}
               </div>
               <div className="tips">
-                Login to ioPay from the native address you wish to stake/vote from before proceeding. Create a new address
-                or login to an existing wallet via ioPay:
+                {lang.t("investors.article.tips3")}
               </div>
               <div className="tips">
-                Create a new address: if you do not have a native IOTX address, create one. When prompted, record your
-                address, private key, and mnemonic phrase. You may also save your credentials as a keystore.
+                {lang.t("investors.article.tips4")}
               </div>
               <div className="tips">
-                Login to existing address: if you already have a Native IOTX address, you may import it using your
-                keystore file, private key, mnemonic phrase, or Ledger hardware wallet.
+                {lang.t("investors.article.tips5")}
               </div>
             </div>
             <div className="right-box illustration">
@@ -98,16 +88,13 @@ const ForInvestors: BlitzPage = observer(() => {
                 {lang.t("investors.article.title4")}
               </div>
               <div className="tips">
-                IoTeX stakeholders can stake/vote using either Desktop or Mobile ioPay:
+                {lang.t("investors.article.tips6")}
               </div>
               <div className="tips">
-                For Desktop users: make sure your ioPay Desktop app is open before proceeding to the voting website. Begin
-                by clicking “My Votes” and then click “New Vote”.
+                {lang.t("investors.article.tips7")}
               </div>
               <div className="tips">
-                For Mobile users: the voting website is integrated into ioPay — access it via the “Discover” tab. Choose
-                the “IoTeX Staking” app, click “My Votes” and authorize ioPay to login via your address. Finally, click
-                “New Vote”.
+                {lang.t("investors.article.tips8")}
               </div>
             </div>
             <div className="right-box illustration">
@@ -120,37 +107,25 @@ const ForInvestors: BlitzPage = observer(() => {
                 {lang.t("investors.article.title5")}
               </div>
               <div className="tips">
-                After clicking “New Vote” you can select which Delegate you wish to vote for and your voting parameters,
-                which are summarized below:
+                {lang.t("investors.article.tips9")}
               </div>
               <div className="tips">
-                Delegate: select a Delegate to vote for — you may change your vote to another Delegate at any time. See
-                the full list of Delegates here.
+                {lang.t("investors.article.tips10")}
               </div>
               <div className="tips">
-                Amount: the # of tokens you wish to use to vote for the selected Delegate. Note: you can add tokens to an
-                existing bucket after your initial vote.
+                {lang.t("investors.article.tips11")}
               </div>
               <div className="tips">
-                Stake Duration: the amount of time you wish to stake your tokens (value between 0 and 1050 days, in
-                multiples of 7). The longer you stake, the more bonus votes (and rewards) you get! You may extend your
-                stake duration at any time but it cannot be decreased.
+                {lang.t("investors.article.tips12")}
               </div>
               <div className="tips">
-                New in Mainnet GA: the concept of “decay” is now
-                removed. Instead of your bonus votes gradually converging to zero, your bonus votes will be retained for
-                your entire stake duration and will be reduced to zero after your stake duration expires.
+                {lang.t("investors.article.tips13")}
               </div>
               <div className="tips">
-                Auto-stake: if you turn auto-stake on, your stake duration and bonus votes will be retained indefinitely
-                until you turn off auto-stake. Once auto-stake is turned off, your stake duration countdown will begin —
-                after your stake duration expires your bonus votes will be reduced to zero and you will be able to unstake
-                your tokens. You may turn auto-stake on/off at any time.
+                {lang.t("investors.article.tips14")}
               </div>
               <div className="tips">
-                IMPORTANT: you will NOT be able to un-stake your tokens until your stake duration expires. The un-staking
-                process lasts 3 days, after which you may withdraw your tokens to your wallet. If you want to be able to
-                un-stake your tokens at any time, select a 0 day stake duration.
+                {lang.t("investors.article.tips15")}
               </div>
             </div>
             <div className="right-box illustration">
@@ -163,20 +138,16 @@ const ForInvestors: BlitzPage = observer(() => {
                 {lang.t("investors.article.title6")}
               </div>
               <div className="tips">
-                After selecting your Delegate and voting parameters, click “Proceed to Vote” and confirm the
-                staking/voting transaction.
+                {lang.t("investors.article.tips16")}
               </div>
               <div className="tips">
-                For Desktop users: confirm the transaction details on the voting website. Then in the ioPay Desktop app,
-                sign the transaction. You will see a confirmation screen in ioPay with your transaction hash.
+                {lang.t("investors.article.tips17")}
               </div>
               <div className="tips">
-                For Mobile users: confirm the transaction details and sign the transaction. You will see a confirmation
-                screen with your transaction hash.
+                {lang.t("investors.article.tips18")}
               </div>
               <div className="tips">
-                Congratulations, you staked/voted with Native IOTX via ioPay! For questions on native staking, please
-                contact an Admin in the IoTeX Telegram Group.
+                {lang.t("investors.article.tips19")}
               </div>
             </div>
             <div className="right-box illustration">
