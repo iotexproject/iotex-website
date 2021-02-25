@@ -11,7 +11,9 @@ const Home: BlitzPage = observer(() => {
   const { lang } = useStore()
   return (
     <Layout title={lang.t("home.title")}>
-      <div className={styles.iotexAlert}>{lang.t("home.alert.txt")}</div>
+      <div className={styles.iotexAlert}>
+        <a href="https://burndrop.iotex.io/">{lang.t("home.alert.txt")}</a>
+      </div>
       <Header />
       <div className={globalStyles.container}>
         {/* banner */}
@@ -64,7 +66,10 @@ const Home: BlitzPage = observer(() => {
                   <img src="images/right-arrow.png" alt="" />
                 </li>
                 <li>
-                  <a href="" target="_blank">
+                  <a
+                    href="https://medium.com/iotex/iotex-2021-the-year-ahead-acf743e2df03"
+                    target="_blank"
+                  >
                     {lang.t("reimagined.links2")}
                   </a>
                   <img src="images/right-arrow.png" alt="" />
@@ -161,6 +166,9 @@ const styles = {
     padding: "0.75rem 0",
     flexCenterCenter: "row",
     cursor: "pointer",
+    a: {
+      color: "#333",
+    },
   }),
   videoContainer: css({
     position: "relative",
