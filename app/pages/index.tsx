@@ -62,8 +62,8 @@ const Home: BlitzPage = observer(() => {
                 <li>
                   <a href="https://iott.network/about" target="_blank">
                     {lang.t("reimagined.links1")}
+                    <img src="images/right-arrow.png" alt="" />
                   </a>
-                  <img src="images/right-arrow.png" alt="" />
                 </li>
                 <li>
                   <a
@@ -71,14 +71,14 @@ const Home: BlitzPage = observer(() => {
                     target="_blank"
                   >
                     {lang.t("reimagined.links2")}
+                    <img src="images/right-arrow.png" alt="" />
                   </a>
-                  <img src="images/right-arrow.png" alt="" />
                 </li>
                 <li>
                   <a href="https://iott.network/" target="_blank">
                     {lang.t("reimagined.links3")}
+                    <img src="images/right-arrow.png" alt="" />
                   </a>
-                  <img src="images/right-arrow.png" alt="" />
                 </li>
               </ul>
             </section>
@@ -99,14 +99,14 @@ const Home: BlitzPage = observer(() => {
                 <li>
                   <a href="https://github.com/iotexproject" target="_blank">
                     {lang.t("empowering.links1")}
+                    <img src="images/right-arrow.png" alt="" />
                   </a>
-                  <img src="images/right-arrow.png" alt="" />
                 </li>
                 <li>
                   <a href="http://docs.iotex.io/" target="_blank">
                     {lang.t("empowering.links2")}
+                    <img src="images/right-arrow.png" alt="" />
                   </a>
-                  <img src="images/right-arrow.png" alt="" />
                 </li>
               </ul>
             </section>
@@ -127,8 +127,8 @@ const Home: BlitzPage = observer(() => {
                 <li>
                   <a href="https://ucam.iotex.io/" target="_blank">
                     {lang.t("own.links1")}
+                    <img src="images/right-arrow.png" alt="" />
                   </a>
-                  <img src="images/right-arrow.png" alt="" />
                 </li>
                 <li>
                   <a
@@ -136,14 +136,14 @@ const Home: BlitzPage = observer(() => {
                     target="_blank"
                   >
                     {lang.t("own.links2")}
+                    <img src="images/right-arrow.png" alt="" />
                   </a>
-                  <img src="images/right-arrow.png" alt="" />
                 </li>
                 <li>
                   <a href="" target="_blank">
                     {lang.t("own.links3")}
+                    <img src="images/right-arrow.png" alt="" />
                   </a>
-                  <img src="images/right-arrow.png" alt="" />
                 </li>
               </ul>
             </section>
@@ -193,7 +193,7 @@ const styles = {
       height: "100%",
       flexCenterCenter: "row",
       img: {
-        width: "40%",
+        width: "60%",
       },
     },
   }),
@@ -233,7 +233,6 @@ const styles = {
       ".reimagined-title": {
         fontSize: "1.8rem",
         lineHeight: "2.5rem",
-        fontFamily: "Helvetica",
         fontWeight: 400,
         color: "#333333",
         textAlign: "center",
@@ -251,7 +250,6 @@ const styles = {
       ".reimagined-desc": {
         width: "100%",
         fontWeight: 400,
-        fontFamily: "Helvetica",
         fontSize: "1rem",
         lineHeight: "1.5rem",
         color: "#666666",
@@ -278,7 +276,6 @@ const styles = {
         },
         li: {
           fontSize: "1rem",
-          fontFamily: "Helvetica",
           fontWeight: 500,
           lineHeight: "1.25rem",
           color: "#333",
@@ -287,10 +284,12 @@ const styles = {
             marginBottom: 0,
           },
           a: {
-            marginRight: "2rem",
             color: "#333",
             "&:hover": {
               color: "#43C9BA",
+            },
+            img: {
+              marginLeft: "2rem",
             },
           },
           lg: {
@@ -320,13 +319,12 @@ const styles = {
         marginBottom: "4rem",
         lg: {
           maxWidth: "30rem",
-          marginRight: "15rem",
+          marginRight: "10rem",
           marginBottom: 0,
         },
       },
       ".empowering-title": {
         fontSize: "1.8rem",
-        fontFamily: "Helvetica",
         fontWeight: 400,
         lineHeight: "2.5rem",
         color: "#fff",
@@ -346,7 +344,6 @@ const styles = {
         maxWidth: "100%",
         fontSize: "1rem",
         fontWeight: 400,
-        fontFamily: "Helvetica",
         lineHeight: "1.5rem",
         color: "#fff",
         marginBottom: "2rem",
@@ -369,7 +366,6 @@ const styles = {
         },
         li: {
           fontSize: "1rem",
-          fontFamily: "Helvetica",
           fontWeight: 500,
           lineHeight: "1.25rem",
           color: "#fff",
@@ -378,10 +374,12 @@ const styles = {
             marginBottom: 0,
           },
           a: {
-            marginRight: "2rem",
             color: "#fff",
             "&:hover": {
               color: "#43C9BA",
+            },
+            img: {
+              marginLeft: "2rem",
             },
           },
           lg: {
@@ -407,6 +405,9 @@ const styles = {
         flexBetweenCenter: "row",
         flexDirection: "row",
       },
+      section: {
+        maxWidth: "34rem",
+      },
       ".things-gif": {
         width: "100%",
         maxWidth: "337px",
@@ -418,7 +419,6 @@ const styles = {
       },
       ".own-title": {
         fontSize: "1.8rem",
-        fontFamily: "Helvetica",
         fontWeight: 400,
         lineHeight: "2.5rem",
         color: "#333333",
@@ -428,7 +428,7 @@ const styles = {
           color: "#43C9BA",
         },
         lg: {
-          fontSize: "3rem",
+          fontSize: "2.6rem",
           lineHeight: "5rem",
           textAlign: "left",
           marginBottom: "4rem",
@@ -438,7 +438,6 @@ const styles = {
         width: "100%",
         fontSize: "1rem",
         fontWeight: 400,
-        fontFamily: "Helvetica",
         lineHeight: "1.5rem",
         color: "#666666",
         marginBottom: "2rem",
@@ -464,7 +463,6 @@ const styles = {
         },
         li: {
           fontSize: "1rem",
-          fontFamily: "Helvetica",
           fontWeight: 500,
           lineHeight: "1.25rem",
           color: "#333",
@@ -473,10 +471,12 @@ const styles = {
             marginBottom: 0,
           },
           a: {
-            marginRight: "2rem",
             color: "#333",
             "&:hover": {
               color: "#43C9BA",
+            },
+            img: {
+              marginLeft: "2rem",
             },
           },
           lg: {

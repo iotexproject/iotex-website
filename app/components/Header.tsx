@@ -50,14 +50,17 @@ export const Header = observer((props) => {
         </Menu.Item>
       </SubMenu>
       <SubMenu
-        key="Resources"
+        key="Platform"
         title={
           <>
-            <span style={{ marginRight: "0.44rem" }}>{lang.t("Resources")}</span>
+            <span style={{ marginRight: "0.44rem" }}>{lang.t("platform")}</span>
             <DownOutlined style={{ color: "#43C9BA" }} />
           </>
         }
       >
+        <Menu.Item key="Ecosystem">
+          <a href="https://ecosystem.iotex.io/">{lang.t("ecosystem")}</a>
+        </Menu.Item>
         <Menu.Item key="Community Forum">
           <a href="https://community.iotex.io/">{lang.t("Community Forum")}</a>
         </Menu.Item>
@@ -187,17 +190,12 @@ const styles = {
     ".logo": {
       width: "6.67rem",
       cursor: "pointer",
-      marginRight: "11rem",
     },
     ".header-box": {
       display: "flex",
       alignItems: "center",
       justifyContent: "space-between",
-      md: {
-        justifyContent: "flex-start",
-      },
       ".large-menus": {
-        flex: 1,
         display: "none",
         md: {
           display: "block",

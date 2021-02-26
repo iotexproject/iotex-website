@@ -8,6 +8,9 @@ export const globalStyles = {
 }
 
 css.global({
+  body: {
+    fontFamily: "Open Sans,Arial,sans-serif",
+  },
   ".mw-container": {
     width: "90%",
     margin: "auto",

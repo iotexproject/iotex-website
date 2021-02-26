@@ -151,7 +151,6 @@
   "process_automation": "PROCESS AUTOMATION",
   "explore_our_partnership": "Explore Our Partnership",
   "get_started_with_iotex": "Get Started With IoteX",
-  "submit": "Submit",
   "pebble.banner.caption": "Pebble is a multi-sensor IoT data oracle that uses a tamper-proof secure element to convert real world phenomena into verifiable, blockchain-ready data.",
   "pebble.section1.title": "Track It. Trace It. Trust It.",
   "pebble.section1.caption": "Pebble uses a secure element (TEE) to ensure data integrity and confidentiality. All data is transmitted in real-time to the blockchain or database of your choice via cellular-IoT connectivity.",
@@ -166,5 +165,6 @@
   "pebble.section5.caption": "Build your next big idea on the IoTeX platform with a dynamic suite of hardware, identity, and smart contract tools. Connect your DApp to the real world with IoTeX.",
   "pebble.section6.title": "Synchronizes with ThingsBoard",
   "pebble.section6.caption": "Powerful device management and data visualization tools for your IoT solution.",
-  "pebble.section7.title": "Ready To Get Started With Pebble?"
+  "pebble.section7.title": "Ready To Get Started With Pebble?",
+  "platform": "Platform"
 }
