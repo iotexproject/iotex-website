@@ -7,6 +7,7 @@ import { Header } from "app/components/Header"
 import Footer from "app/components/Footer"
 import { useStore } from "../stores"
 import { globalStyles } from "app/utils/styles"
+import HighLight from "../components/HighLight"
 
 const ForInvestors: BlitzPage = observer(() => {
   const { lang } = useStore()
@@ -21,9 +22,17 @@ const ForInvestors: BlitzPage = observer(() => {
               <div className="title">
                 {lang.t("investors.banner.title")}
               </div>
-              <div className="tips">
-                {lang.t("investors.banner.tips")}
-              </div>
+              <HighLight
+                className="tips"
+                sourceStr={lang.t("investors.banner.tips")}
+                keyArr={[{
+                  word: lang.t("investors.banner.tips.keyword1"),
+                  link: "https://iotex.io/mainnet"
+                }, {
+                  word: lang.t("investors.banner.tips.keyword2"),
+                  link: "https://iopay.iotex.io/"
+                }]}
+                markActiveStyle={{color:'#43C9BA', fontWeight: 600}}/>
               <a className="action-stake" href="https://member.iotex.io/">
                 {lang.t("stake_now")}
               </a>
@@ -42,9 +51,14 @@ const ForInvestors: BlitzPage = observer(() => {
               <div className="title">
                 {lang.t("investors.article.title1")}
               </div>
-              <div className="tips">
-                {lang.t("investors.article.tips1")}
-              </div>
+              <HighLight
+                className="tips"
+                sourceStr={lang.t("investors.article.tips1")}
+                keyArr={[{
+                  word: lang.t("investors.article.tips1.keyword"),
+                  link: "https://iotex.io/exchanges"
+                }]}
+                markActiveStyle={{color:'#43C9BA'}}/>
             </div>
             <div className="right-box illustration">
               <img src="/images/screen-shot.png" alt=""/>
@@ -55,9 +69,28 @@ const ForInvestors: BlitzPage = observer(() => {
               <div className="title">
                 {lang.t("investors.article.title2")}
               </div>
-              <div className="tips">
-                {lang.t("investors.article.tips2")}
-              </div>
+              <HighLight
+                className="tips"
+                sourceStr={lang.t("investors.article.tips2")}
+                keyArr={[{
+                  word: lang.t("investors.article.tips2.keyword"),
+                  link: "https://iopay.iotex.io/"
+                }]}
+                markActiveStyle={{color:'#43C9BA'}}/>
+                <div className="download-box">
+                  <a href="https://play.google.com/store/apps/details?id=io.iotex.iopay.gp">
+                    <img src="/images/playstore.png" alt="" />
+                  </a>
+                  <a href="https://play.google.com/store/apps/details?id=io.iotex.iopay.gp">
+                    <img src="/images/ios-download.png" alt="" />
+                  </a>
+                  <a href="https://play.google.com/store/apps/details?id=io.iotex.iopay.gp">
+                    <img src="/images/appstore.png" alt="" />
+                  </a>
+                  <a href="https://play.google.com/store/apps/details?id=io.iotex.iopay.gp">
+                    <img src="/images/btn_mirror1.png" alt="" />
+                  </a>
+                </div>
             </div>
             <div className="right-box illustration">
               <img src="/images/iopay.png" alt=""/>
@@ -71,12 +104,20 @@ const ForInvestors: BlitzPage = observer(() => {
               <div className="tips">
                 {lang.t("investors.article.tips3")}
               </div>
-              <div className="tips">
-                {lang.t("investors.article.tips4")}
-              </div>
-              <div className="tips">
-                {lang.t("investors.article.tips5")}
-              </div>
+              <HighLight
+                className="tips"
+                sourceStr={lang.t("investors.article.tips4")}
+                keyArr={[{
+                  word: lang.t("investors.article.tips4.keyword")
+                }]}
+                markActiveStyle={{fontWeight: 600}}/>
+              <HighLight
+                className="tips"
+                sourceStr={lang.t("investors.article.tips5")}
+                keyArr={[{
+                  word: lang.t("investors.article.tips5.keyword")
+                }]}
+                markActiveStyle={{fontWeight: 600}}/>
             </div>
             <div className="right-box illustration">
               <img src="/images/iopay-login.png" alt=""/>
@@ -90,12 +131,20 @@ const ForInvestors: BlitzPage = observer(() => {
               <div className="tips">
                 {lang.t("investors.article.tips6")}
               </div>
-              <div className="tips">
-                {lang.t("investors.article.tips7")}
-              </div>
-              <div className="tips">
-                {lang.t("investors.article.tips8")}
-              </div>
+              <HighLight
+                className="tips"
+                sourceStr={lang.t("investors.article.tips7")}
+                keyArr={[{
+                  word: lang.t("investors.article.tips7.keyword1")
+                }]}
+                markActiveStyle={{fontWeight: 600}}/>
+              <HighLight
+                className="tips"
+                sourceStr={lang.t("investors.article.tips8")}
+                keyArr={[{
+                  word: lang.t("investors.article.tips8.keyword")
+                }]}
+                markActiveStyle={{fontWeight: 600}}/>
             </div>
             <div className="right-box illustration">
               <img src="/images/vote.png" alt=""/>
@@ -109,24 +158,48 @@ const ForInvestors: BlitzPage = observer(() => {
               <div className="tips">
                 {lang.t("investors.article.tips9")}
               </div>
-              <div className="tips">
-                {lang.t("investors.article.tips10")}
-              </div>
-              <div className="tips">
-                {lang.t("investors.article.tips11")}
-              </div>
-              <div className="tips">
-                {lang.t("investors.article.tips12")}
-              </div>
-              <div className="tips">
-                {lang.t("investors.article.tips13")}
-              </div>
-              <div className="tips">
-                {lang.t("investors.article.tips14")}
-              </div>
-              <div className="tips">
-                {lang.t("investors.article.tips15")}
-              </div>
+              <HighLight
+                className="tips"
+                sourceStr={lang.t("investors.article.tips10")}
+                keyArr={[{
+                  word: lang.t("investors.article.tips10.keyword")
+                }]}
+                markActiveStyle={{fontWeight: 600}}/>
+              <HighLight
+                className="tips"
+                sourceStr={lang.t("investors.article.tips11")}
+                keyArr={[{
+                  word: lang.t("investors.article.tips11.keyword")
+                }]}
+                markActiveStyle={{fontWeight: 600}}/>
+              <HighLight
+                className="tips"
+                sourceStr={lang.t("investors.article.tips12")}
+                keyArr={[{
+                  word: lang.t("investors.article.tips12.keyword")
+                }]}
+                markActiveStyle={{fontWeight: 600}}/>
+              <HighLight
+                className="tips"
+                sourceStr={lang.t("investors.article.tips13")}
+                keyArr={[{
+                  word: lang.t("investors.article.tips13.keyword")
+                }]}
+                markActiveStyle={{fontWeight: 600}}/>
+              <HighLight
+                className="tips"
+                sourceStr={lang.t("investors.article.tips14")}
+                keyArr={[{
+                  word: lang.t("investors.article.tips14.keyword")
+                }]}
+                markActiveStyle={{fontWeight: 600}}/>
+              <HighLight
+                className="tips"
+                sourceStr={lang.t("investors.article.tips15")}
+                keyArr={[{
+                  word: lang.t("investors.article.tips15.keyword")
+                }]}
+                markActiveStyle={{fontWeight: 600}}/>
             </div>
             <div className="right-box illustration">
               <img src="/images/stake.png" alt=""/>
@@ -140,15 +213,27 @@ const ForInvestors: BlitzPage = observer(() => {
               <div className="tips">
                 {lang.t("investors.article.tips16")}
               </div>
-              <div className="tips">
-                {lang.t("investors.article.tips17")}
-              </div>
-              <div className="tips">
-                {lang.t("investors.article.tips18")}
-              </div>
-              <div className="tips">
-                {lang.t("investors.article.tips19")}
-              </div>
+              <HighLight
+                className="tips"
+                sourceStr={lang.t("investors.article.tips17")}
+                keyArr={[{
+                  word: lang.t("investors.article.tips17.keyword")
+                }]}
+                markActiveStyle={{fontWeight: 600}}/>
+              <HighLight
+                className="tips"
+                sourceStr={lang.t("investors.article.tips18")}
+                keyArr={[{
+                  word: lang.t("investors.article.tips18.keyword")
+                }]}
+                markActiveStyle={{fontWeight: 600}}/>
+              <HighLight
+                className="tips"
+                sourceStr={lang.t("investors.article.tips19")}
+                keyArr={[{
+                  word: lang.t("investors.article.tips19.keyword")
+                }]}
+                markActiveStyle={{fontWeight: 600}}/>
             </div>
             <div className="right-box illustration">
               <img src="/images/sign.png" alt=""/>
@@ -243,7 +328,8 @@ const styles = {
     },
 
     ".title": {
-      fontSize: 60
+      fontSize: 60,
+      lineHeight: "64px"
     },
 
     ".tips": {
@@ -315,8 +401,23 @@ const styles = {
 
       ".link": {
         color: "$green600"
-      }
+      },
 
+      ".download-box": {
+        mt: 20,
+
+        a: {
+          display: "inline-block",
+          mr: 10,
+          mb: 10,
+
+          img: {
+            height: 38
+          }
+
+        }
+
+      }
     },
 
 
@@ -326,5 +427,4 @@ const styles = {
       }
     }
   })
-
 }

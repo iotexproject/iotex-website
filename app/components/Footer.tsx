@@ -2,6 +2,7 @@ import { BlitzPage } from "blitz"
 import { observer } from "mobx-react-lite"
 import { css } from "app/utils/stitches.config"
 import { useStore } from "../stores"
+import { block } from "@hapi/hoek"
 
 const Footer: BlitzPage = observer(() => {
   const { lang } = useStore()
@@ -93,11 +94,6 @@ const styles = {
 
         ".logo-box": {
           textAlign: "left",
-
-          img: {
-            mr: 10
-          }
-
         }
       },
 
@@ -144,14 +140,18 @@ const styles = {
         flex: 1,
         mt: 30,
 
-        img: {
-          size: 40,
-          mr: 25,
+        a: {
+          display: "inline-block",
+          mr: 10,
+          mb: 10,
 
           "&:last-child": {
-            mr: 0
+            mr: 0,
           }
+        },
 
+        img: {
+          size: 40,
         }
       },
     },

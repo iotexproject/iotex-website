@@ -4,12 +4,18 @@ import Layout from "app/layouts/Layout"
 import "antd/dist/antd.css"
 import { css } from "app/utils/stitches.config"
 import { Header } from "app/components/Header"
+import Footer from "app/components/Footer"
+import HighLight from "app/components/HighLight"
 import { useStore } from "../stores"
 import { globalStyles } from "app/utils/styles"
 import { Form, Input } from 'antd';
 
 const Pebble: BlitzPage = observer(() => {
   const { lang } = useStore()
+
+  const translateHighLight = () => {
+
+  }
 
   return (
     <Layout title={"Pebble"}>
@@ -30,7 +36,12 @@ const Pebble: BlitzPage = observer(() => {
               <div className="title">
                 <p>{lang.t("the_most_advanced")}</p>
                 <p>{lang.t("blockchain_iot")}</p>
-                <p>{lang.t("dev_board")}</p>
+                <HighLight
+                  sourceStr={lang.t("dev_board")}
+                  keyArr={[{
+                    word: lang.t("dev_board_emphasize")
+                  }]}
+                  markActiveStyle={{color:'#43C9BA'}}/>
               </div>
               <div className="caption">
                 {lang.t("pebble.banner.caption")}
@@ -181,6 +192,7 @@ const Pebble: BlitzPage = observer(() => {
             </div>
           </div>
         </div>
+        <Footer />
       </div>
     </Layout>
   )
@@ -276,7 +288,7 @@ const styles = {
 
       ".topic": {
         fontSize: 26,
-        mb: 10,
+        mb: 20,
         borderBottom: "3px solid $green600"
       },
 
