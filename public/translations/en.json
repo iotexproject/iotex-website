@@ -185,5 +185,6 @@
   "pebble.section6.title": "Synchronizes with ThingsBoard",
   "pebble.section6.caption": "Powerful device management and data visualization tools for your IoT solution.",
   "pebble.section7.title": "Ready To Get Started With Pebble?",
+  "pebble": "Pebble",
   "platform": "Platform"
 }
