@@ -2,7 +2,7 @@
   "hello": "hello ${message}",
   "home.title": "IoTeX | Building the Internet of Trusted Things",
   "home.alert.txt": "Burn-Drop is now LIVE! Earn ~20% Annual Percentage Yield and receive $BTC drop >>",
-  "reimagined.title1": "The Internet of Things,",
+  "reimagined.title1": "The Internet of Things, ",
   "reimagined.title2": "Reimagined",
   "reimagined.desc1": "Welcome to the",
   "reimagined.desc2": "Internet of Trusted Things",
@@ -166,5 +166,6 @@
   "pebble.section6.title": "Synchronizes with ThingsBoard",
   "pebble.section6.caption": "Powerful device management and data visualization tools for your IoT solution.",
   "pebble.section7.title": "Ready To Get Started With Pebble?",
-  "platform": "Platform"
+  "platform": "Platform",
+  "home.alert.roadmap": "Explore the IoTeX 2021 Roadmap >>"
 }

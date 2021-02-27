@@ -1,4 +1,4 @@
-import { BlitzPage } from "blitz"
+import { Link, BlitzPage } from "blitz"
 import { observer } from "mobx-react-lite"
 import { useStore } from "app/stores"
 import { Header } from "../components/Header"
@@ -12,7 +12,9 @@ const Home: BlitzPage = observer(() => {
   return (
     <Layout title={lang.t("home.title")}>
       <div className={styles.iotexAlert}>
-        <a href="https://burndrop.iotex.io/">{lang.t("home.alert.txt")}</a>
+        <a href="https://medium.com/iotex/iotex-2021-the-year-ahead-acf743e2df03">
+          {lang.t("home.alert.roadmap")}
+        </a>
       </div>
       <Header />
       <div className={globalStyles.container}>
@@ -131,12 +133,11 @@ const Home: BlitzPage = observer(() => {
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="https://www.nordicsemi.com/News/2020/02/IoTeXs-Cellular-IoT-based-tracker-delivers-environmental-and-condition-data-for-assets-in-transit?utm_campaign=SoMe%20promotion&utm_source=facebook&utm_medium=social&utm_content=News%20release:%20IoTeX"
-                    target="_blank"
-                  >
-                    {lang.t("own.links2")}
-                    <img src="images/right-arrow.png" alt="" />
+                  <a href="/pebble">
+                    <>
+                      {lang.t("own.links2")}
+                      <img src="images/right-arrow.png" alt="" />
+                    </>
                   </a>
                 </li>
                 <li>
@@ -159,11 +160,11 @@ const Home: BlitzPage = observer(() => {
 const styles = {
   iotexAlert: css({
     background: "linear-gradient(91deg, #FAD002 0%, #06BFC1 100%)",
-    fontSize: "16px",
+    fontSize: "0.875rem",
     color: "#333",
     fontWeight: 400,
     textAlign: "center",
-    padding: "0.75rem 0",
+    padding: "0.3rem 0",
     flexCenterCenter: "row",
     cursor: "pointer",
     a: {

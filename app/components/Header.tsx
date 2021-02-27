@@ -14,18 +14,18 @@ export const Header = observer((props) => {
   const { lang } = useStore()
 
   const menus = (
-    <Menu mode="horizontal">
+    <Menu mode="horizontal" theme="dark">
       <SubMenu
         key="getStared"
         title={
           <>
             <span style={{ marginRight: "0.44rem" }}>{lang.t("get.started")}</span>
-            <DownOutlined style={{ color: "#43C9BA" }} />
+            {/* <DownOutlined style={{ color: "#43C9BA" }} /> */}
           </>
         }
       >
         <Menu.Item key="Onboarding Pack">
-          <a href="https://iotex.gitbook.io/iotex/vision-and-mission" target="_blank">
+          <a href="http://onboard.iotex.io/" target="_blank">
             {lang.t("Onboarding Pack")}
           </a>
         </Menu.Item>
@@ -54,7 +54,7 @@ export const Header = observer((props) => {
         title={
           <>
             <span style={{ marginRight: "0.44rem" }}>{lang.t("platform")}</span>
-            <DownOutlined style={{ color: "#43C9BA" }} />
+            {/* <DownOutlined style={{ color: "#43C9BA" }} /> */}
           </>
         }
       >
@@ -82,7 +82,7 @@ export const Header = observer((props) => {
         title={
           <>
             <span style={{ marginRight: "0.44rem" }}>{lang.t("Tools")}</span>
-            <DownOutlined style={{ color: "#43C9BA" }} />
+            {/* <DownOutlined style={{ color: "#43C9BA" }} /> */}
           </>
         }
       >
@@ -107,7 +107,7 @@ export const Header = observer((props) => {
         title={
           <>
             <span style={{ marginRight: "0.44rem" }}>{lang.t("Foundation")}</span>
-            <DownOutlined style={{ color: "#43C9BA" }} />
+            {/* <DownOutlined style={{ color: "#43C9BA" }} /> */}
           </>
         }
       >
@@ -137,10 +137,10 @@ export const Header = observer((props) => {
               {lang.lang === "en" ? (
                 <img src="images/english_icon.png" style={{ height: "16px" }} alt="" />
               ) : (
-                <img src="/public/images/chinese_icon.png" style={{ height: "16px" }} alt="" />
+                <img src="images/chinese_icon.png" style={{ height: "16px" }} alt="" />
               )}
             </span>
-            <DownOutlined style={{ color: "#43C9BA" }} />
+            {/* <DownOutlined style={{ color: "#43C9BA" }} /> */}
           </>
         }
       >
@@ -149,17 +149,17 @@ export const Header = observer((props) => {
             src="images/english_icon.png"
             style={{ height: "16px", marginRight: "1rem" }}
             alt=""
-          />{" "}
+          />
           English
         </Menu.Item>
-        <Menu.Item key="chinese" onClick={() => lang.setLang("zh_CN")}>
+        {/* <Menu.Item key="chinese" onClick={() => lang.setLang("zh_CN")}>
           <img
             src="images/chinese_icon.png"
             style={{ height: "16px", marginRight: "1rem" }}
             alt=""
-          />{" "}
+          />
           中文
-        </Menu.Item>
+        </Menu.Item> */}
       </SubMenu>
     </Menu>
   )
@@ -198,7 +198,9 @@ const styles = {
       ".large-menus": {
         display: "none",
         md: {
-          display: "block",
+          flex: 1,
+          display: "flex",
+          justifyContent: "flex-end",
         },
       },
       ".mobile-menus": {

@@ -24,13 +24,16 @@ css.global({
     border: "none",
     borderRadius: "4px",
   },
-  ".ant-menu": {
+  ".ant-menu.ant-menu-dark": {
     backgroundColor: "transparent",
     color: "#43C9BA",
   },
   ".ant-menu-item:hover, .ant-menu-item-active, .ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open, .ant-menu-submenu-active, .ant-menu-submenu-title:hover ": {
     color: "#43C9BA !important",
     border: "0px !important",
+  },
+  ".ant-menu-dark.ant-menu-horizontal": {
+    background: "transparent",
   },
   ".ant-menu-horizontal": {
     border: "0px !important",
@@ -41,14 +44,17 @@ css.global({
   ".ant-menu-submenu-popup": {
     borderTop: "2px solid #43C9BA !important",
   },
-  ".ant-menu-submenu-popup > .ant-menu": {
-    backgroundColor: "#262626",
+  ".ant-menu-dark .ant-menu-sub, .ant-menu.ant-menu-dark .ant-menu-sub": {
+    backgroundColor: "#262626 !important",
   },
   ".ant-menu-vertical.ant-menu-sub > .ant-menu-item:hover": {
-    backgroundColor: "rgba(0,0,0,0.1)",
+    backgroundColor: "rgba(0,0,0,0.4) !important",
   },
   ".ant-menu-vertical.ant-menu-sub > .ant-menu-item a": {
-    color: "#43C9BA",
+    color: "#43C9BA !important",
+  },
+  ".ant-menu-dark .ant-menu-submenu-selected": {
+    color: "#43C9BA !important",
   },
   ".ant-dropdown-menu-submenu-title": {
     ".anticon-down": {
@@ -57,5 +63,8 @@ css.global({
         display: "block",
       },
     },
+  },
+  ".ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-item-selected": {
+    backgroundColor: "transparent !important",
   },
 })
