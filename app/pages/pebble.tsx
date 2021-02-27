@@ -4,16 +4,20 @@ import Layout from "app/layouts/Layout"
 import "antd/dist/antd.css"
 import { css } from "app/utils/stitches.config"
 import { Header } from "app/components/Header"
+import Footer from "app/components/Footer"
+import HighLight from "app/components/HighLight"
 import { useStore } from "../stores"
 import { globalStyles } from "app/utils/styles"
-import { Form, Input } from 'antd';
+import { Form, Input } from "antd"
 
 const Pebble: BlitzPage = observer(() => {
   const { lang } = useStore()
 
+  const translateHighLight = () => {}
+
   return (
     <Layout title={"Pebble"}>
-      <Header/>
+      <Header />
       <div className={`${globalStyles.container} ${styles.index}`}>
         <div className={styles.banner}>
           <video
@@ -30,12 +34,20 @@ const Pebble: BlitzPage = observer(() => {
               <div className="title">
                 <p>{lang.t("the_most_advanced")}</p>
                 <p>{lang.t("blockchain_iot")}</p>
-                <p>{lang.t("dev_board")}</p>
+                <HighLight
+                  sourceStr={lang.t("dev_board")}
+                  keyArr={[
+                    {
+                      word: lang.t("dev_board_emphasize"),
+                    },
+                  ]}
+                  markActiveStyle={{ color: "#43C9BA" }}
+                />
               </div>
-              <div className="caption">
-                {lang.t("pebble.banner.caption")}
-              </div>
-              <a className="action-buy" href="https://www.crowdsupply.com/iotex/pebble-tracker">{lang.t("buy_on_crowdsupply")}</a>
+              <div className="caption">{lang.t("pebble.banner.caption")}</div>
+              <a className="action-buy" href="https://www.crowdsupply.com/iotex/pebble-tracker">
+                {lang.t("buy_on_crowdsupply")}
+              </a>
             </div>
           </div>
         </div>
@@ -47,23 +59,23 @@ const Pebble: BlitzPage = observer(() => {
             </div>
             <div className="card-container">
               <div className="card-item">
-                <img src="/images/icon_location.png" alt=""/>
+                <img src="/images/icon_location.png" alt="" />
                 <span>{lang.t("location")}</span>
               </div>
               <div className="card-item">
-                <img src="/images/icon_temperature.png" alt=""/>
+                <img src="/images/icon_temperature.png" alt="" />
                 <span>{lang.t("climate")}</span>
               </div>
               <div className="card-item">
-                <img src="/images/icon_vibration.png" alt=""/>
+                <img src="/images/icon_vibration.png" alt="" />
                 <span>{lang.t("motion")}</span>
               </div>
               <div className="card-item">
-                <img src="/images/icon_sunlight.png" alt=""/>
+                <img src="/images/icon_sunlight.png" alt="" />
                 <span>{lang.t("light")}</span>
               </div>
               <div className="card-item">
-                <img src="/images/icon_connectivity.png" alt=""/>
+                <img src="/images/icon_connectivity.png" alt="" />
                 <span>{lang.t("cellular_iot")}</span>
               </div>
             </div>
@@ -85,21 +97,21 @@ const Pebble: BlitzPage = observer(() => {
             </div>
             <div className="project-container">
               <div className="project-item">
-                <img src="/images/industrial-processes.png" alt=""/>
+                <img src="/images/industrial-processes.png" alt="" />
                 <span>{lang.t("supply_chain")}</span>
-                <img src="/images/commercia.png" alt=""/>
+                <img src="/images/commercia.png" alt="" />
                 <span>{lang.t("contract_settlement")}</span>
               </div>
               <div className="project-item">
-                <img src="/images/fixed-assets.png" alt=""/>
+                <img src="/images/fixed-assets.png" alt="" />
                 <span>{lang.t("remote_monitoring")}</span>
-                <img src="/images/mobile-asset-tracking.png" alt=""/>
+                <img src="/images/mobile-asset-tracking.png" alt="" />
                 <span>{lang.t("transportation_logistics")}</span>
               </div>
               <div className="project-item">
-                <img src="/images/wellness.png" alt=""/>
+                <img src="/images/wellness.png" alt="" />
                 <span>{lang.t("mobile_asset_tracking")}</span>
-                <img src="/images/assistive-technologies.png" alt=""/>
+                <img src="/images/assistive-technologies.png" alt="" />
                 <span>{lang.t("process_automation")}</span>
               </div>
             </div>
@@ -107,14 +119,16 @@ const Pebble: BlitzPage = observer(() => {
         </div>
         <div className={`${styles.section} ${styles.partnershipSection}`}>
           <div className="main-container partnership-container">
-            <div className="logo-container">
-            </div>
+            <div className="logo-container"></div>
             <div className="partnership-box">
-              <div className="title">
-                {lang.t("pebble.section3.title")}
-              </div>
+              <div className="title">{lang.t("pebble.section3.title")}</div>
               <p className="caption">{lang.t("pebble.section3.caption")}</p>
-              <a className="action-explore" href="https://www.nordicsemi.com/News/2020/02/IoTeXs-Cellular-IoT-based-tracker-delivers-environmental-and-condition-data-for-assets-in-transit">{lang.t("explore_our_partnership")}</a>
+              <a
+                className="action-explore"
+                href="https://www.nordicsemi.com/News/2020/02/IoTeXs-Cellular-IoT-based-tracker-delivers-environmental-and-condition-data-for-assets-in-transit"
+              >
+                {lang.t("explore_our_partnership")}
+              </a>
             </div>
           </div>
         </div>
@@ -122,24 +136,27 @@ const Pebble: BlitzPage = observer(() => {
           <div className="main-container">
             <div className="title">{lang.t("pebble.section4.title")}</div>
             <p className="caption">{lang.t("pebble.section4.caption")}</p>
-            <img className="product-img" src="/images/img_pebble.png" alt=""/>
+            <img className="product-img" src="/images/img_pebble.png" alt="" />
             <div className="company-container">
-              <img src="/images/nordic_logo.png" alt=""/>
-              <img src="/images/bosch_logo.png" alt=""/>
-              <img src="/images/tdk-logo.png" alt=""/>
-              <img src="/images/pmt_logo.png" alt=""/>
+              <img src="/images/nordic_logo.png" alt="" />
+              <img src="/images/bosch_logo.png" alt="" />
+              <img src="/images/tdk-logo.png" alt="" />
+              <img src="/images/pmt_logo.png" alt="" />
             </div>
           </div>
         </div>
         <div className={`${styles.section} ${styles.iotexSection}`}>
           <div className="main-container iotex-container">
-            <img className="iotex-powered-img" src="/images/powered-by-iotex.gif" alt=""/>
+            <img className="iotex-powered-img" src="/images/powered-by-iotex.gif" alt="" />
             <div className="iotex-box">
-              <div className="title">
-                {lang.t("pebble.section5.title")}
-              </div>
+              <div className="title">{lang.t("pebble.section5.title")}</div>
               <p className="caption">{lang.t("pebble.section5.caption")}</p>
-              <a className="action-start" href="https://docs.iotex.io/developer/hardware/pebble.html">{lang.t("get_started_with_iotex")}</a>
+              <a
+                className="action-start"
+                href="https://docs.iotex.io/developer/hardware/pebble.html"
+              >
+                {lang.t("get_started_with_iotex")}
+              </a>
             </div>
           </div>
         </div>
@@ -164,7 +181,7 @@ const Pebble: BlitzPage = observer(() => {
             <Form className="form-box">
               <div className="basic-info-box">
                 <Form.Item>
-                  <Input placeholder="Name"/>
+                  <Input placeholder="Name" />
                 </Form.Item>
                 <Form.Item>
                   <Input placeholder="Email Address" />
@@ -181,6 +198,7 @@ const Pebble: BlitzPage = observer(() => {
             </div>
           </div>
         </div>
+        <Footer />
       </div>
     </Layout>
   )
@@ -189,7 +207,6 @@ const Pebble: BlitzPage = observer(() => {
 export default Pebble
 
 const styles = {
-
   index: css({
     background: "$bg",
     height: "100vh",
@@ -199,9 +216,8 @@ const styles = {
       position: "relative",
       width: "80%",
       maxWidth: "$mainW",
-      margin: "0 auto"
-    }
-
+      margin: "0 auto",
+    },
   }),
 
   banner: css({
@@ -214,39 +230,37 @@ const styles = {
       height: 700,
 
       ".banner-bg": {
-        display: "none"
+        display: "none",
       },
 
       ".banner-bg-mobile": {
-        display: "block"
+        display: "block",
       },
 
       ".content-box": {
-
         ".topic": {
-          fontSize: 18
+          fontSize: 18,
         },
 
         ".title": {
-          fontSize: 36
+          fontSize: 36,
         },
 
         ".caption": {
-          fontSize: 12
+          fontSize: 12,
         },
-
       },
 
       ".topic": {
         fontSize: 18,
-        mb: 10
+        mb: 10,
       },
 
       ".indicator": {
         width: 96,
         height: 3,
         background: "$green600",
-        mb: 20
+        mb: 20,
       },
     },
 
@@ -261,7 +275,7 @@ const styles = {
     },
 
     ".banner-bg-mobile": {
-      display: "none"
+      display: "none",
     },
 
     ".content-box": {
@@ -276,8 +290,8 @@ const styles = {
 
       ".topic": {
         fontSize: 26,
-        mb: 10,
-        borderBottom: "3px solid $green600"
+        mb: 20,
+        borderBottom: "3px solid $green600",
       },
 
       ".title": {
@@ -286,12 +300,12 @@ const styles = {
 
         P: {
           lineHeight: "1.3em",
-          margin: 0
-        }
+          margin: 0,
+        },
       },
 
       ".caption": {
-        fontSize: 16
+        fontSize: 16,
       },
 
       ".action-buy": {
@@ -302,58 +316,49 @@ const styles = {
         border: "1px solid $green600",
         br: 4,
         fontSize: 18,
-        mt: 100
-      }
-
-    }
-
-
+        mt: 100,
+      },
+    },
   }),
 
   section: css({
     py: 60,
 
     lgMax: {
-
       ".title": {
         fontSize: 40,
-      }
-
+      },
     },
 
     smMax: {
-
       ".title": {
-        fontSize: "24px !important"
+        fontSize: "24px !important",
       },
-
     },
 
     ".text-wrapper": {
       py: 30,
-      textAlign: "center"
+      textAlign: "center",
     },
 
     ".title": {
       fontSize: 48,
       mb: 10,
-      fontPoppins: 500
+      fontPoppins: 500,
     },
 
     ".caption": {
       fontSize: 14,
       width: "80%",
       margin: "0 auto",
-      mt: 10
-    }
-
+      mt: 10,
+    },
   }),
 
   trackSection: css({
     background: "$gray50",
 
     smMax: {
-
       ".card-container": {
         flexCenterCenter: "column",
 
@@ -361,11 +366,9 @@ const styles = {
           width: "90%",
           maxWidth: "100%",
           height: 257,
-          mt: 30
-        }
-
-      }
-
+          mt: 30,
+        },
+      },
     },
 
     ".card-container": {
@@ -383,16 +386,14 @@ const styles = {
 
         img: {
           size: 85,
-          mb: 30
+          mb: 30,
         },
 
         span: {
-          fontSize: 14
-        }
-
-      }
-    }
-
+          fontSize: 14,
+        },
+      },
+    },
   }),
 
   connectingSection: css({
@@ -404,21 +405,20 @@ const styles = {
       color: "white",
 
       ".caption": {
-        width: "100%"
+        width: "100%",
       },
 
       ".connecting-bg": {
-        height: "100%"
+        height: "100%",
       },
 
       ".project-container": {
         flexCenterCenter: "column",
 
         ".project-item": {
-          width: "100%"
-        }
-
-      }
+          width: "100%",
+        },
+      },
     },
 
     ".connecting-bg": {
@@ -427,11 +427,11 @@ const styles = {
       right: 0,
       left: 0,
       bottom: 0,
-      objectFit: "cover"
+      objectFit: "cover",
     },
 
     ".caption": {
-      pt: 20
+      pt: 20,
     },
 
     ".project-container": {
@@ -446,15 +446,14 @@ const styles = {
 
         img: {
           size: 45,
-          my: 30
+          my: 30,
         },
 
         span: {
-          fontSize: 12
-        }
-
-      }
-    }
+          fontSize: 12,
+        },
+      },
+    },
   }),
 
   partnershipSection: css({
@@ -469,7 +468,7 @@ const styles = {
 
         ".logo-container": {
           width: "100%",
-          pb: "80%"
+          pb: "80%",
         },
 
         ".partnership-box": {
@@ -479,21 +478,17 @@ const styles = {
 
           ".title": {
             lineHeight: "inherit",
-            textAlign: "center"
+            textAlign: "center",
           },
 
           ".caption": {
             width: "100%",
             textAlign: "center",
             mx: 0,
-            my: 40
+            my: 40,
           },
-
-        }
-
+        },
       },
-
-
     },
 
     ".partnership-container": {
@@ -508,19 +503,19 @@ const styles = {
         boxShadow: "0px 2px 20px rgba(39, 39, 52, 0.06)",
         backgroundImage: "url('/images/nordic-iotex.png')",
         backgroundSize: "100%",
-        backgroundRepeat: "no-repeat"
+        backgroundRepeat: "no-repeat",
       },
 
       ".partnership-box": {
         width: "58%",
 
         ".title": {
-          lineHeight: "64px"
+          lineHeight: "64px",
         },
 
         ".caption": {
           mx: 0,
-          my: 40
+          my: 40,
         },
 
         ".action-explore": {
@@ -531,12 +526,10 @@ const styles = {
           border: "1px solid $green600",
           br: 4,
           fontSize: 18,
-          mt: 100
-        }
-
-
-      }
-    }
+          mt: 100,
+        },
+      },
+    },
   }),
 
   qualitySection: css({
@@ -551,31 +544,29 @@ const styles = {
         flexCenterCenter: "column",
 
         img: {
-          mb: 30
-        }
-
+          mb: 30,
+        },
       },
 
       ".caption": {
         width: "100%",
-        my: 30
+        my: 30,
       },
 
       ".product-img": {
-        width: "100%"
-      }
-
+        width: "100%",
+      },
     },
 
     ".title": {
-      textAlign: "center"
+      textAlign: "center",
     },
 
     ".product-img": {
       display: "block",
       width: "87%",
       objectFit: "cover",
-      margin: "80px auto"
+      margin: "80px auto",
     },
 
     ".company-container": {
@@ -584,13 +575,9 @@ const styles = {
 
       img: {
         width: 228,
-        height: 66
-      }
-
-
-    }
-
-
+        height: 66,
+      },
+    },
   }),
 
   iotexSection: css({
@@ -602,7 +589,7 @@ const styles = {
         flexCenterCenter: "column",
 
         ".iotex-powered-img": {
-          width: "100%"
+          width: "100%",
         },
 
         ".iotex-box": {
@@ -610,13 +597,13 @@ const styles = {
           textAlign: "center",
 
           ".title": {
-            lineHeight: "inherit"
+            lineHeight: "inherit",
           },
 
           ".caption": {
-            width: "100%"
-          }
-        }
+            width: "100%",
+          },
+        },
       },
     },
 
@@ -632,12 +619,12 @@ const styles = {
         width: "58%",
 
         ".title": {
-          lineHeight: "64px"
+          lineHeight: "64px",
         },
 
         ".caption": {
           mx: 0,
-          my: 40
+          my: 40,
         },
 
         ".action-start": {
@@ -648,10 +635,10 @@ const styles = {
           border: "1px solid $green600",
           br: 4,
           fontSize: 18,
-          mt: 100
-        }
-      }
-    }
+          mt: 100,
+        },
+      },
+    },
   }),
 
   thingsBoardSection: css({
@@ -663,8 +650,8 @@ const styles = {
     smMax: {
       ".board-bg": {
         height: "100%",
-        objectFit: "cover"
-      }
+        objectFit: "cover",
+      },
     },
 
     ".board-bg": {
@@ -673,11 +660,11 @@ const styles = {
       right: 0,
       left: 0,
       bottom: 0,
-      width: "100%"
+      width: "100%",
     },
 
     ".caption": {
-      pt: 20
+      pt: 20,
     },
   }),
 
@@ -692,11 +679,11 @@ const styles = {
       color: "white",
 
       ".title": {
-        fontSize: "28px !important"
+        fontSize: "28px !important",
       },
 
       ".subscription-container": {
-        px: 60
+        px: 60,
       },
     },
 
@@ -704,16 +691,16 @@ const styles = {
       color: "white",
 
       ".subscription-container": {
-        px: "0 !important"
+        px: "0 !important",
       },
 
       ".title": {
         fontSize: "24px !important",
-        textAlign: "center"
+        textAlign: "center",
       },
 
       ".form-box": {
-        mt: 40
+        mt: 40,
       },
 
       ".basic-info-box": {
@@ -722,22 +709,22 @@ const styles = {
 
         ".ant-form-item": {
           width: "100%",
-          mb: 20
-        }
-      }
+          mb: 20,
+        },
+      },
     },
 
     ".subscription-container": {
-      px: 120
+      px: 120,
     },
 
     ".title": {
       fontSize: "32px !important",
-      textAlign: "center"
+      textAlign: "center",
     },
 
     ".form-box": {
-      mt: 60
+      mt: 60,
     },
 
     ".basic-info-box": {
@@ -745,13 +732,12 @@ const styles = {
       pb: "3%",
 
       ".ant-form-item": {
-        width: "48.5%"
-      }
-
+        width: "48.5%",
+      },
     },
 
     ".ant-form-item": {
-      mb: 0
+      mb: 0,
     },
 
     ".ant-input": {
@@ -760,7 +746,7 @@ const styles = {
       fontSize: 14,
       background: "#FFFFFF1A",
       border: "none",
-      br: 0
+      br: 0,
     },
 
     ".submit-box": {
@@ -775,17 +761,12 @@ const styles = {
         border: "1px solid $green600",
         br: 4,
         fontSize: 14,
-        ml: 20
-      }
-
+        ml: 20,
+      },
     },
 
     ".result-box": {
-      size: 50
-    }
-
-
-
-  })
-
+      size: 50,
+    },
+  }),
 }

@@ -2,6 +2,7 @@ import { BlitzPage } from "blitz"
 import { observer } from "mobx-react-lite"
 import { css } from "app/utils/stitches.config"
 import { useStore } from "../stores"
+import { block } from "@hapi/hoek"
 
 const Footer: BlitzPage = observer(() => {
   const { lang } = useStore()
@@ -54,8 +55,10 @@ const Footer: BlitzPage = observer(() => {
           </div>
         </div>
         <div className="copyright">
-          <span>© 2020 IoTeX  </span>
-          <a href="https://iotex.io/policy">{lang.t("terms_of_use")} & {lang.t("privacy_policy")}</a>
+          <span>© 2020 IoTeX </span>
+          <a href="https://iotex.io/policy">
+            {lang.t("terms_of_use")} & {lang.t("privacy_policy")}
+          </a>
         </div>
       </div>
     </div>
@@ -72,8 +75,8 @@ const styles = {
     pt: 64,
 
     smMax: {
-      height: "auto"
-    }
+      height: "auto",
+    },
   }),
   mainContainer: css({
     margin: "0 auto",
@@ -88,17 +91,12 @@ const styles = {
 
         ".menu-box": {
           width: "100%",
-          mt: 40
+          mt: 40,
         },
 
         ".logo-box": {
           textAlign: "left",
-
-          img: {
-            mr: 10
-          }
-
-        }
+        },
       },
 
       ".copyright": {
@@ -107,9 +105,9 @@ const styles = {
 
         a: {
           ml: 0,
-          mt: 30
-        }
-      }
+          mt: 30,
+        },
+      },
     },
 
     ".menu-wrapper": {
@@ -125,7 +123,7 @@ const styles = {
           fontSize: 18,
           color: "white",
           margin: "0 0 28px",
-          fontIbm: 300
+          fontIbm: 300,
         },
 
         a: {
@@ -135,7 +133,7 @@ const styles = {
           lineHeight: "16px",
           mb: "14px",
           color: "$green600",
-          textDecoration: "none"
+          textDecoration: "none",
         },
       },
 
@@ -144,15 +142,19 @@ const styles = {
         flex: 1,
         mt: 30,
 
-        img: {
-          size: 40,
-          mr: 25,
+        a: {
+          display: "inline-block",
+          mr: 10,
+          mb: 10,
 
           "&:last-child": {
-            mr: 0
-          }
+            mr: 0,
+          },
+        },
 
-        }
+        img: {
+          size: 40,
+        },
       },
     },
 
@@ -165,10 +167,8 @@ const styles = {
       a: {
         color: "white",
         textDecoration: "none",
-        ml: 64
-      }
-
-    }
-
-  })
+        ml: 64,
+      },
+    },
+  }),
 }

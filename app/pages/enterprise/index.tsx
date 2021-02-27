@@ -5,6 +5,7 @@ import { Header } from "../../components/Header"
 import { Form, Input } from "antd"
 import { globalStyles } from "app/utils/styles"
 import { css } from "../../utils/stitches.config"
+import Footer from "app/components/Footer"
 
 const validateMessages = {
   required: "`required!`",
@@ -190,6 +191,7 @@ const Enterprise: BlitzPage = observer(() => {
           </div>
         </article>
       </div>
+      <Footer />
     </>
   )
 })
