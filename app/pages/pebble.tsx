@@ -175,29 +175,29 @@ const Pebble: BlitzPage = observer(() => {
             </div>
           </div>
         </div>
-        <div className={`${styles.section} ${styles.subscriptionSection}`}>
-          <div className="main-container subscription-container">
-            <div className="title">{lang.t("pebble.section7.title")}</div>
-            <Form className="form-box">
-              <div className="basic-info-box">
-                <Form.Item>
-                  <Input placeholder="Name" />
-                </Form.Item>
-                <Form.Item>
-                  <Input placeholder="Email Address" />
-                </Form.Item>
-              </div>
-              <Form.Item>
-                <Input.TextArea placeholder="Message" autoSize={{ minRows: 4, maxRows: 4 }} />
-              </Form.Item>
-            </Form>
-            <div className="submit-box">
-              <span>12 + 14=</span>
-              <Input className="result-box" />
-              <div className="action-submit">{lang.t("submit")}</div>
-            </div>
-          </div>
-        </div>
+        {/*<div className={`${styles.section} ${styles.subscriptionSection}`}>*/}
+        {/*  <div className="main-container subscription-container">*/}
+        {/*    <div className="title">{lang.t("pebble.section7.title")}</div>*/}
+        {/*    <Form className="form-box">*/}
+        {/*      <div className="basic-info-box">*/}
+        {/*        <Form.Item>*/}
+        {/*          <Input placeholder="Name" />*/}
+        {/*        </Form.Item>*/}
+        {/*        <Form.Item>*/}
+        {/*          <Input placeholder="Email Address" />*/}
+        {/*        </Form.Item>*/}
+        {/*      </div>*/}
+        {/*      <Form.Item>*/}
+        {/*        <Input.TextArea placeholder="Message" autoSize={{ minRows: 4, maxRows: 4 }} />*/}
+        {/*      </Form.Item>*/}
+        {/*    </Form>*/}
+        {/*    <div className="submit-box">*/}
+        {/*      <span>12 + 14=</span>*/}
+        {/*      <Input className="result-box" />*/}
+        {/*      <div className="action-submit">{lang.t("submit")}</div>*/}
+        {/*    </div>*/}
+        {/*  </div>*/}
+        {/*</div>*/}
         <Footer />
       </div>
     </Layout>
@@ -226,7 +226,7 @@ const styles = {
     height: 780,
     overflow: "hidden",
 
-    smMax: {
+    mdMax: {
       height: 700,
 
       ".banner-bg": {
@@ -330,7 +330,7 @@ const styles = {
       },
     },
 
-    smMax: {
+    mdMax: {
       ".title": {
         fontSize: "24px !important",
       },
@@ -358,7 +358,7 @@ const styles = {
   trackSection: css({
     background: "$gray50",
 
-    smMax: {
+    mdMax: {
       ".card-container": {
         flexCenterCenter: "column",
 
@@ -401,7 +401,7 @@ const styles = {
     overflow: "hidden",
     color: "white",
 
-    smMax: {
+    mdMax: {
       color: "white",
 
       ".caption": {
@@ -460,7 +460,7 @@ const styles = {
     background: "$gray50",
     py: "120px !important",
 
-    smMax: {
+    mdMax: {
       py: "60px !important",
 
       ".partnership-container": {
@@ -468,7 +468,8 @@ const styles = {
 
         ".logo-container": {
           width: "100%",
-          pb: "80%",
+          maxWidth: 580,
+          pb: "75%",
         },
 
         ".partnership-box": {
@@ -537,7 +538,7 @@ const styles = {
     backgroundSize: "cover",
     color: "white",
 
-    smMax: {
+    mdMax: {
       textAlign: "center",
 
       ".company-container": {
@@ -584,7 +585,7 @@ const styles = {
     background: "white",
     py: "120px !important",
 
-    smMax: {
+    mdMax: {
       ".iotex-container": {
         flexCenterCenter: "column",
 
@@ -647,7 +648,7 @@ const styles = {
     color: "white",
     py: "160px !important",
 
-    smMax: {
+    mdMax: {
       ".board-bg": {
         height: "100%",
         objectFit: "cover",
@@ -687,7 +688,7 @@ const styles = {
       },
     },
 
-    smMax: {
+    mdMax: {
       color: "white",
 
       ".subscription-container": {

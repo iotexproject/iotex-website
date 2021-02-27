@@ -38,7 +38,7 @@ const ForInvestors: BlitzPage = observer(() => {
               <a className="action-stake" href="https://member.iotex.io/">
                 {lang.t("stake_now")}
               </a>
-              <a className="action-download" href="">
+              <a className="action-download" href="https://iopay-wallet.iotex.io/">
                 → {lang.t("download_iopay")}
               </a>
             </div>
@@ -281,7 +281,7 @@ const styles = {
     height: "100vh",
     fontIbm: 300,
 
-    smMax: {
+    mdMax: {
       ".main-container": {
         display: "block",
       },
@@ -317,7 +317,7 @@ const styles = {
     padding: "60px 0",
     mb: 100,
 
-    smMax: {
+    mdMax: {
       padding: "50px 0",
       mb: 0,
 
@@ -391,7 +391,7 @@ const styles = {
     },
   }),
   articleContainer: css({
-    smMax: {
+    mdMax: {
       padding: "40px 0 30px",
     },
   }),
@@ -399,7 +399,7 @@ const styles = {
     alignItems: "flex-start !important",
     padding: "30px 0 80px",
 
-    smMax: {
+    mdMax: {
       padding: "40px 0 80px",
 
       ".illustration": {

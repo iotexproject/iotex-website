@@ -34,6 +34,14 @@ const Footer: BlitzPage = observer(() => {
             <a href="https://forum.iotex.io/">{lang.t("forum")}</a>
           </div>
           <div className="logo-box">
+            <iframe
+              className="email-iframe"
+              src="https://iotex.substack.com/embed"
+              width="100%"
+              height="320"
+              frameBorder="0"
+              scrolling="no" />
+
             <a href="https://twitter.com/iotex_io">
               <img src="/images/twitter.png" alt="" />
             </a>
@@ -70,11 +78,11 @@ export default Footer
 const styles = {
   footer: css({
     background: "$bg2",
-    height: 420,
+    height: 600,
     width: "100%",
     pt: 64,
 
-    smMax: {
+    mdMax: {
       height: "auto",
     },
   }),
@@ -85,7 +93,7 @@ const styles = {
     color: "white",
     fontIbm: 300,
 
-    smMax: {
+    mdMax: {
       ".menu-wrapper": {
         display: "block",
 
@@ -96,6 +104,11 @@ const styles = {
 
         ".logo-box": {
           textAlign: "left",
+
+          ".email-iframe": {
+            mt: 20
+          },
+
         },
       },
 
@@ -140,7 +153,10 @@ const styles = {
       ".logo-box": {
         textAlign: "center",
         flex: 1,
-        mt: 30,
+
+        ".email-iframe": {
+          mb: 20
+        },
 
         a: {
           display: "inline-block",
