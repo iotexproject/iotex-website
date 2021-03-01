@@ -39,6 +39,7 @@ const Footer: BlitzPage = observer(() => {
               src="https://iotex.substack.com/embed"
               width="100%"
               height="320"
+              style={{background: "#262626"}}
               frameBorder="0"
               scrolling="no" />
 
@@ -186,5 +187,9 @@ const styles = {
         ml: 64,
       },
     },
+
+    ".embed-page" : {
+      background: 'red'
+    }
   }),
 }
