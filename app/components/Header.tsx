@@ -14,13 +14,13 @@ export const Header = observer((props) => {
   const { lang } = useStore()
 
   const menus = (
-    <Menu mode="horizontal" theme="dark">
+    <Menu mode="horizontal" theme="dark" inlineCollapsed={false}>
       <SubMenu
         key="getStared"
         title={
           <>
             <span style={{ marginRight: "0.44rem" }}>{lang.t("get.started")}</span>
-            {/* <DownOutlined style={{ color: "#43C9BA" }} /> */}
+            <DownOutlined style={{ color: "#43C9BA", fontSize: 12 }} />
           </>
         }
       >
@@ -54,7 +54,7 @@ export const Header = observer((props) => {
         title={
           <>
             <span style={{ marginRight: "0.44rem" }}>{lang.t("platform")}</span>
-            {/* <DownOutlined style={{ color: "#43C9BA" }} /> */}
+            <DownOutlined style={{ color: "#43C9BA", fontSize: 12 }} />
           </>
         }
       >
@@ -82,7 +82,7 @@ export const Header = observer((props) => {
         title={
           <>
             <span style={{ marginRight: "0.44rem" }}>{lang.t("Tools")}</span>
-            {/* <DownOutlined style={{ color: "#43C9BA" }} /> */}
+            <DownOutlined style={{ color: "#43C9BA", fontSize: 12 }} />
           </>
         }
       >
@@ -107,7 +107,7 @@ export const Header = observer((props) => {
         title={
           <>
             <span style={{ marginRight: "0.44rem" }}>{lang.t("Foundation")}</span>
-            {/* <DownOutlined style={{ color: "#43C9BA" }} /> */}
+            <DownOutlined style={{ color: "#43C9BA", fontSize: 12 }} />
           </>
         }
       >
@@ -140,7 +140,7 @@ export const Header = observer((props) => {
                 <img src="images/chinese_icon.png" style={{ height: "16px" }} alt="" />
               )}
             </span>
-            {/* <DownOutlined style={{ color: "#43C9BA" }} /> */}
+            <DownOutlined style={{ color: "#43C9BA", fontSize: 12 }} />
           </>
         }
       >
@@ -198,6 +198,7 @@ const styles = {
       ".large-menus": {
         display: "none",
         md: {
+          width: "75vw",
           flex: 1,
           display: "flex",
           justifyContent: "flex-end",

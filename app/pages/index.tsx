@@ -3,12 +3,15 @@ import { observer } from "mobx-react-lite"
 import { useStore } from "app/stores"
 import { Header } from "../components/Header"
 import Footer from "../components/Footer"
+import { Carousel } from "antd"
+import { DownCircleOutlined } from "@ant-design/icons"
 import { globalStyles } from "app/utils/styles"
 import { css } from "../utils/stitches.config"
 import Layout from "../layouts/Layout"
 
 const Home: BlitzPage = observer(() => {
   const { lang } = useStore()
+
   return (
     <Layout title={lang.t("home.title")}>
       <div className={styles.iotexAlert}>
@@ -41,11 +44,29 @@ const Home: BlitzPage = observer(() => {
           <div className="banner_txt">
             <img src="images/banner_txt.gif" alt="" />
           </div>
+          <div className="down_btn">
+            <a href="#friendShip">
+              <DownCircleOutlined style={{ fontSize: 30, color: "#fff" }} />
+            </a>
+          </div>
         </article>
 
-        {/* logos */}
-        <article className={styles.friendShip}>
-          <img className="mw-container" src="images/logos.png" alt="" />
+        {/* logos autoplay */}
+        <article className={styles.friendShip} id="friendShip">
+          <Carousel effect="fade" dots={false} autoplay>
+            <div>
+              <img className="mw-container logo-pics" src="/images/1.png" alt="" />
+            </div>
+            <div>
+              <img className="mw-container logo-pics" src="/images/2.png" alt="" />
+            </div>
+            <div>
+              <img className="mw-container logo-pics" src="/images/3.png" alt="" />
+            </div>
+            <div>
+              <img className="mw-container logo-pics" src="/images/4.png" alt="" />
+            </div>
+          </Carousel>
         </article>
 
         {/* The Internet of Things, Reimagined */}
@@ -197,11 +218,23 @@ const styles = {
         width: "60%",
       },
     },
+    ".down_btn": {
+      position: "absolute",
+      bottom: "20%",
+      width: "100%",
+      height: "30px",
+      textAlign: "center",
+    },
   }),
   friendShip: css({
+    width: "100%",
     backgroundColor: "#262626",
-    flexCenterCenter: "row",
-    img: {
+    overflow: "hidden",
+    height: "auto",
+    md: {
+      height: "8.75rem",
+    },
+    ".logo-pics": {
       width: "90%",
       height: "auto",
       md: {
