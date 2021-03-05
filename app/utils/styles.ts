@@ -11,6 +11,9 @@ css.global({
   body: {
     fontFamily: "Open Sans,Arial,sans-serif",
   },
+  html: {
+    background: "transparent !important",
+  },
   ".mw-container": {
     width: "90%",
     margin: "auto",

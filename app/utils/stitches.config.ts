@@ -13,6 +13,9 @@ export const { styled, css } = createStyled({
       $purple500: "hsl(252,78%,60%)",
       $green500: "hsl(148,60%,60%)",
       $green600: "#43C9BA",
+      $greenFF: "#02FDFF",
+      $greenFD: "#F9FDFD",
+      $yellow: "#FFD900",
     },
     height: {
       $0: "0",
@@ -166,7 +169,7 @@ export const { styled, css } = createStyled({
       justifyContent: "center",
       alignItems: "center",
     }),
-    flexLeftCenter: (config) => (value: CSSProperties["flexDirection"] = "row", ) => ({
+    flexLeftCenter: (config) => (value: CSSProperties["flexDirection"] = "row") => ({
       flexDirection: value,
       display: "flex",
       justifyContent: "flex-start",

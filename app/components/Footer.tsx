@@ -2,7 +2,6 @@ import { BlitzPage } from "blitz"
 import { observer } from "mobx-react-lite"
 import { css } from "app/utils/stitches.config"
 import { useStore } from "../stores"
-import { block } from "@hapi/hoek"
 
 const Footer: BlitzPage = observer(() => {
   const { lang } = useStore()
@@ -39,9 +38,11 @@ const Footer: BlitzPage = observer(() => {
               src="https://iotex.substack.com/embed"
               width="100%"
               height="320"
-              style={{background: "#262626"}}
+              style={{ background: "#262626" }}
               frameBorder="0"
-              scrolling="no" />
+              title="navigation"
+              scrolling="no"
+            />
 
             <a href="https://twitter.com/iotex_io">
               <img src="/images/twitter.png" alt="" />
@@ -107,9 +108,8 @@ const styles = {
           textAlign: "left",
 
           ".email-iframe": {
-            mt: 20
+            mt: 20,
           },
-
         },
       },
 
@@ -156,7 +156,7 @@ const styles = {
         flex: 1,
 
         ".email-iframe": {
-          mb: 20
+          mb: 20,
         },
 
         a: {
@@ -188,8 +188,8 @@ const styles = {
       },
     },
 
-    ".embed-page" : {
-      background: 'red'
-    }
+    ".embed-page": {
+      background: "red",
+    },
   }),
 }
