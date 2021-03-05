@@ -2,6 +2,8 @@ import { BlitzPage } from "blitz"
 import { observer } from "mobx-react-lite"
 import { css } from "app/utils/stitches.config"
 import { useStore } from "../stores"
+import { block } from "@hapi/hoek"
+import { Link } from "blitz"
 
 const Footer: BlitzPage = observer(() => {
   const { lang } = useStore()
@@ -14,7 +16,7 @@ const Footer: BlitzPage = observer(() => {
             <a href="https://iotex.io/developers">{lang.t("ecosystem")}</a>
             <a href="https://iotex.io/secure-hardware">{lang.t("secure_ardware")}</a>
             <a href="https://iotex.io/community-resources">{lang.t("community")}</a>
-            <a href="https://iotex.io/research">{lang.t("research_papers")}</a>
+            <Link href="/research">{lang.t("research_papers")}</Link>
             <a href="https://member.iotex.io/">{lang.t("delegate_program")}</a>
             <a href="https://www.iotex.io/charity">{lang.t("charity_program")}</a>
           </div>

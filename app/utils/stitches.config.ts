@@ -7,8 +7,12 @@ export const { styled, css } = createStyled({
     colors: {
       $bg: "white",
       $bg2: "#262626",
+      $bg3: "#2B2B2B",
+      $bg4: "#4E4E4E",
       $gray50: "#FAFAFA",
+      $gray400: "#808080",
       $gray600: "#666666",
+      $gray800: "#333333",
       $blue500: "hsl(206,100%,50%)",
       $purple500: "hsl(252,78%,60%)",
       $green500: "hsl(148,60%,60%)",
@@ -50,6 +54,7 @@ export const { styled, css } = createStyled({
       $untitled: "Untitled Sans, apple-system, sans-serif",
       $ibm: "IBM Plex Sans, sans-serif",
       $poppins: "Poppins, sans-serif",
+      $heebo: "Heebo, sans-serif",
     },
     fontWeights: {},
     lineHeights: {},
@@ -137,6 +142,10 @@ export const { styled, css } = createStyled({
     }),
     fontPoppins: (config) => (value) => ({
       fontFamily: "$poppins",
+      fontWeight: value,
+    }),
+    fontHeebo: (config) => (value) => ({
+      fontFamily: "$heebo",
       fontWeight: value,
     }),
     linearGradient: (config) => (value) => ({

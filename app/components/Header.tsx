@@ -46,7 +46,7 @@ export const Header = observer((props) => {
           <Link href="/for-investors">{lang.t("Invest in IOTX")}</Link>
         </Menu.Item>
         <Menu.Item key="FAQ">
-          <a href="https://iotex.io/faq/">{lang.t("FAQ")}</a>
+          <Link href="/faq">{lang.t("FAQ")}</Link>
         </Menu.Item>
       </SubMenu>
       <SubMenu
@@ -118,7 +118,7 @@ export const Header = observer((props) => {
           <a href="https://iotex.io/team/">{lang.t("Team")}</a>
         </Menu.Item>
         <Menu.Item key="Research">
-          <a href="https://iotex.io/research/">{lang.t("Research")}</a>
+          <Link href="/research">{lang.t("Research")}</Link>
         </Menu.Item>
         <Menu.Item key="Roadmap">
           <a href="https://iotex.medium.com/iotex-2021-the-year-ahead-acf743e2df03">
