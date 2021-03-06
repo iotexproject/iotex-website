@@ -445,7 +445,7 @@ const styles = {
       },
       md: {
         maxWidth: "46rem",
-        fontSize: "0.88rem",
+        fontSize: "1rem",
       },
     },
   }),
