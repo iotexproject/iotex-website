@@ -483,7 +483,7 @@ const styles = {
   }),
   footerContainer: css({
     paddingTop: "6.75rem",
-    backgroundImage: "url(images/halo/Vector-2.png)",
+    backgroundImage: "url('/images/halo/Vector-2.png')",
     backgroundPosition: "top center",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
