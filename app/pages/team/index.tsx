@@ -435,13 +435,14 @@ const styles = {
     ".subtitle": {
       width: "90%",
       textAlign: "center",
-      color: "#fff",
+      color: "#fafafa",
       fontSize: "0.875rem",
       fontWeight: 400,
       lineHeight: "1.55rem",
       margin: "auto",
       span: {
         fontWeight: "bold",
+        color: "#fff",
       },
       md: {
         maxWidth: "46rem",
