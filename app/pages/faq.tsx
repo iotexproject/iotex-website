@@ -12,6 +12,15 @@ import { globalStyles } from "app/utils/styles"
 const FAQ: BlitzPage = observer(() => {
   const { lang } = useStore()
 
+  const scrollToAnchor = (anchorName) => {
+    if (anchorName) {
+      // 找到锚点
+      let anchorElement = document.getElementById(anchorName);
+      // 如果对应id的锚点存在，就跳转到锚点
+      if(anchorElement) { anchorElement.scrollIntoView({block: 'start', behavior: 'smooth'}); }
+    }
+  }
+
   return (
     <Layout title={"FAQ"}>
       <div className={globalStyles.container}>
@@ -24,23 +33,23 @@ const FAQ: BlitzPage = observer(() => {
         <div className={styles.contentWrapper}>
           <div className={`${styles.mainContainer} ${styles.contentBox}`}>
             <div className={styles.leftBar}>
-              <a>{lang.t("faq.sidebar.option1")}</a>
-              <a>{lang.t("faq.sidebar.option2")}</a>
-              <a>{lang.t("faq.sidebar.option3")}</a>
-              <a>{lang.t("faq.sidebar.option4")}</a>
-              <a>{lang.t("faq.sidebar.option5")}</a>
-              <a>{lang.t("faq.sidebar.option6")}</a>
-              <a>{lang.t("faq.sidebar.option7")}</a>
-              <a>{lang.t("faq.sidebar.option8")}</a>
-              <a>{lang.t("faq.sidebar.option9")}</a>
-              <a>{lang.t("faq.sidebar.option10")}</a>
-              <a>{lang.t("faq.sidebar.option11")}</a>
-              <a>{lang.t("faq.sidebar.option12")}</a>
-              <a>{lang.t("faq.sidebar.option13")}</a>
-              <a>{lang.t("faq.sidebar.option14")}</a>
+              <a onClick={() => {scrollToAnchor("block1")}}>{lang.t("faq.sidebar.option1")}</a>
+              <a onClick={() => {scrollToAnchor("block2")}}>{lang.t("faq.sidebar.option2")}</a>
+              <a onClick={() => {scrollToAnchor("block3")}}>{lang.t("faq.sidebar.option3")}</a>
+              <a onClick={() => {scrollToAnchor("block4")}}>{lang.t("faq.sidebar.option4")}</a>
+              <a onClick={() => {scrollToAnchor("block5")}}>{lang.t("faq.sidebar.option5")}</a>
+              <a onClick={() => {scrollToAnchor("block6")}}>{lang.t("faq.sidebar.option6")}</a>
+              <a onClick={() => {scrollToAnchor("block7")}}>{lang.t("faq.sidebar.option7")}</a>
+              <a onClick={() => {scrollToAnchor("block8")}}>{lang.t("faq.sidebar.option8")}</a>
+              <a onClick={() => {scrollToAnchor("block9")}}>{lang.t("faq.sidebar.option9")}</a>
+              <a onClick={() => {scrollToAnchor("block10")}}>{lang.t("faq.sidebar.option10")}</a>
+              <a onClick={() => {scrollToAnchor("block11")}}>{lang.t("faq.sidebar.option11")}</a>
+              <a onClick={() => {scrollToAnchor("block12")}}>{lang.t("faq.sidebar.option12")}</a>
+              <a onClick={() => {scrollToAnchor("block13")}}>{lang.t("faq.sidebar.option13")}</a>
+              <a onClick={() => {scrollToAnchor("block14")}}>{lang.t("faq.sidebar.option14")}</a>
             </div>
             <div className={styles.rightContent}>
-              <div className={styles.contentBlock}>
+              <div className={styles.contentBlock} id="block1">
                 <h3>{lang.t("faq.block1.title")}</h3>
                 <p className="article">{lang.t("faq.block1.caption1")}</p>
                 <HighLight
@@ -59,7 +68,7 @@ const FAQ: BlitzPage = observer(() => {
                   markActiveStyle={{ color: "#43C9BA" }}
                 />
               </div>
-              <div className={styles.contentBlock}>
+              <div className={styles.contentBlock} id="block2">
                 <h3>{lang.t("faq.block2.title")}</h3>
                 <p className="article">{lang.t("faq.block2.caption1")}</p>
                 <HighLight
@@ -75,13 +84,13 @@ const FAQ: BlitzPage = observer(() => {
                 />
                 <img src="/images/faq_platform.png" alt=""/>
               </div>
-              <div className={styles.contentBlock}>
+              <div className={styles.contentBlock} id="block3">
                 <h3>{lang.t("faq.block3.title")}</h3>
                 <p className="article">{lang.t("faq.block3.caption1")}</p>
                 <p className="article">{lang.t("faq.block3.caption2")}</p>
                 <p className="article">{lang.t("faq.block3.caption3")}</p>
               </div>
-              <div className={styles.contentBlock}>
+              <div className={styles.contentBlock} id="block4">
                 <h3>{lang.t("faq.block4.title")}</h3>
                 <p className="article">
                   <HighLight
@@ -137,7 +146,7 @@ const FAQ: BlitzPage = observer(() => {
                   <div>{lang.t("faq.block4.caption31")}</div>
                 </p>
               </div>
-              <div className={styles.contentBlock}>
+              <div className={styles.contentBlock} id="block5">
                 <h3>{lang.t("faq.block5.title")}</h3>
                 <HighLight
                   className="article"
@@ -162,7 +171,7 @@ const FAQ: BlitzPage = observer(() => {
                 />
                 <img src="/images/faq-burn-drop.png" alt=""/>
               </div>
-              <div className={styles.contentBlock}>
+              <div className={styles.contentBlock} id="block6">
                 <h3>{lang.t("faq.block6.title")}</h3>
                 <HighLight
                   className="article"
@@ -216,7 +225,7 @@ const FAQ: BlitzPage = observer(() => {
                   markActiveStyle={{ fontWeight: 500 }}
                 />
               </div>
-              <div className={styles.contentBlock}>
+              <div className={styles.contentBlock} id="block7">
                 <h3>{lang.t("faq.block7.title")}</h3>
                 <HighLight
                   className="article"
@@ -238,7 +247,7 @@ const FAQ: BlitzPage = observer(() => {
                   markActiveStyle={{ color: "#43C9BA" }}
                 />
               </div>
-              <div className={styles.contentBlock}>
+              <div className={styles.contentBlock} id="block8">
                 <h3>{lang.t("faq.block8.title")}</h3>
                 <img className="pb-1rem" src="/images/faq-journey.png" alt=""/>
                 <p className="article">{lang.t("faq.block8.caption1")}</p>
@@ -255,7 +264,7 @@ const FAQ: BlitzPage = observer(() => {
                   markActiveStyle={{ color: "#43C9BA" }}
                 />
               </div>
-              <div className={styles.contentBlock}>
+              <div className={styles.contentBlock} id="block9">
                 <h3>{lang.t("faq.block9.title")}</h3>
                 <p className="article">{lang.t("faq.block9.caption1")}</p>
                 <HighLight
@@ -293,7 +302,7 @@ const FAQ: BlitzPage = observer(() => {
                   markActiveStyle={{ color: "#43C9BA" }}
                 />
               </div>
-              <div className={styles.contentBlock}>
+              <div className={styles.contentBlock} id="block10">
                 <h3>{lang.t("faq.block10.title")}</h3>
                 <p className="article">{lang.t("faq.block10.caption1")}</p>
                 <HighLight
@@ -371,7 +380,7 @@ const FAQ: BlitzPage = observer(() => {
                   markActiveStyle={{ color: "#43C9BA" }}
                 />
               </div>
-              <div className={styles.contentBlock}>
+              <div className={styles.contentBlock} id="block11">
                 <h3>{lang.t("faq.block11.title")}</h3>
                 <p className="article">{lang.t("faq.block11.caption1")}</p>
                 <p className="article">{lang.t("faq.block11.caption2")}</p>
@@ -398,7 +407,7 @@ const FAQ: BlitzPage = observer(() => {
                   markActiveStyle={{ color: "#43C9BA" }}
                 />
               </div>
-              <div className={styles.contentBlock}>
+              <div className={styles.contentBlock} id="block12">
                 <h3>{lang.t("faq.block12.title")}</h3>
                 <p className="article">{lang.t("faq.block12.caption1")}</p>
                 <p className="article">{lang.t("faq.block12.caption2")}</p>
@@ -444,7 +453,7 @@ const FAQ: BlitzPage = observer(() => {
                   markActiveStyle={{ color: "#43C9BA" }}
                 />
               </div>
-              <div className={styles.contentBlock}>
+              <div className={styles.contentBlock} id="block13">
                 <h3>{lang.t("faq.block13.title")}</h3>
                 <HighLight
                   className="article"
@@ -458,7 +467,7 @@ const FAQ: BlitzPage = observer(() => {
                   markActiveStyle={{ color: "#43C9BA" }}
                 />
               </div>
-              <div className={styles.contentBlock}>
+              <div className={styles.contentBlock} id="block14">
                 <h3>{lang.t("faq.block14.title")}</h3>
                 <p className="article">{lang.t("faq.block14.caption1")}</p>
                 <p className="article">{lang.t("faq.block14.caption2")}</p>
