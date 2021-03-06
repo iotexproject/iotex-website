@@ -232,7 +232,7 @@ const styles = {
     },
   }),
   haloBanner: css({
-    background: "url('/images/halo/banner.png')",
+    background: "url('/images/halo/bg.png')",
     backgroundSize: "cover",
     backgroundPosition: "top center",
     backgroundRepeat: "no-repeat",
@@ -492,7 +492,7 @@ const styles = {
       paddingTop: "4.75rem",
     },
     "._initial_bc_cZFBJj": {
-      backgroundColor: "transparent",
+      backgroundColor: "transparent !important",
     },
   }),
   haloResources: css({
