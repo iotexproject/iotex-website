@@ -232,7 +232,7 @@ const styles = {
     },
   }),
   haloBanner: css({
-    background: "url(images/halo/banner.png)",
+    background: "url('/images/halo/banner.png')",
     backgroundSize: "cover",
     backgroundPosition: "top center",
     backgroundRepeat: "no-repeat",
