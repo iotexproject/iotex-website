@@ -8,7 +8,7 @@ import { Link } from "blitz"
 const Footer: BlitzPage = observer(() => {
   const { lang } = useStore()
   return (
-    <div className={`${styles.footer}`}>
+    <div className={`iotex-footer ${styles.footer}`}>
       <div className={styles.mainContainer}>
         <div className="menu-wrapper">
           <div className="menu-box">

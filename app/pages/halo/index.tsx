@@ -491,7 +491,7 @@ const styles = {
       backgroundSize: "100% 100%",
       paddingTop: "4.75rem",
     },
-    "._initial_bc_cZFBJj": {
+    ".iotex-footer": {
       backgroundColor: "transparent !important",
     },
   }),
