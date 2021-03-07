@@ -326,7 +326,7 @@ const styles = {
           maxWidth: "40%",
         },
         img: {
-          height: "3.5rem",
+          height: "2.5rem",
           marginBottom: "2.5rem",
           lg: {
             height: "2rem",
