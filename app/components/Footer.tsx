@@ -67,7 +67,7 @@ const Footer: BlitzPage = observer(() => {
           </div>
         </div>
         <div className="copyright">
-          <span>© 2020 IoTeX </span>
+          <span>© {new Date().getFullYear()} IoTeX </span>
           <a href="https://iotex.io/policy">
             {lang.t("terms_of_use")} & {lang.t("privacy_policy")}
           </a>
