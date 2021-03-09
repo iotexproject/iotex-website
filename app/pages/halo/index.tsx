@@ -168,24 +168,34 @@ const Halo: BlitzPage = observer(() => {
           <div className="haloResourcesTitle">{lang.t("halo.resources")}</div>
           <ul>
             <li>
-              <img src="images/halo/Group-36-1.png" alt="" />
-              <p className="name">{lang.t("halo.github")}</p>
+              <a href="https://github.com/iotexproject" target="_blank">
+                <img src="images/halo/Group-36-1.png" alt="" />
+                <p className="name">{lang.t("halo.github")}</p>
+              </a>
             </li>
             <li>
-              <img src="images/halo/document.png" alt="" />
-              <p className="name">{lang.t("halo.documentation")}</p>
+              <a href="https://docs.iotex.io/" target="_blank">
+                <img src="images/halo/document.png" alt="" />
+                <p className="name">{lang.t("halo.documentation")}</p>
+              </a>
             </li>
             <li>
-              <img src="images/halo/firmware.png" alt="" />
-              <p className="name">{lang.t("halo.codelabs")}</p>
+              <a href="http://codelabs.iotex.io/" target="_blank">
+                <img src="images/halo/firmware.png" alt="" />
+                <p className="name">{lang.t("halo.codelabs")}</p>
+              </a>
             </li>
             <li>
-              <img src="images/halo/forum-3-1.png" alt="" />
-              <p className="name">{lang.t("halo.github")}</p>
+              <a href="https://community.iotex.io/c/research-development/7" target="_blank">
+                <img src="images/halo/forum-3-1.png" alt="" />
+                <p className="name">{lang.t("halo.github")}</p>
+              </a>
             </li>
             <li>
-              <img src="images/halo/chat.png" alt="" />
-              <p className="name">{lang.t("halo.github")}</p>
+              <a href="https://t.me/IoTeXDev" target="_blank">
+                <img src="images/halo/chat.png" alt="" />
+                <p className="name">{lang.t("halo.github")}</p>
+              </a>
             </li>
           </ul>
         </div>
@@ -289,7 +299,6 @@ const styles = {
   }),
   yellowBtn: css({
     backgroundColor: "$yellow",
-    padding: "0.5rem 4rem",
     outline: "none",
     border: "none",
     borderRadius: "1.875rem",
@@ -298,6 +307,7 @@ const styles = {
       fontWeight: 600,
       color: "#333",
       display: "block",
+      padding: "0.5rem 4rem",
       "&:hover": {
         color: "#Fff",
       },
@@ -519,7 +529,6 @@ const styles = {
       },
       li: {
         width: "100%",
-        padding: "1.96rem 0 1.5rem 0",
         boxShadow: "0rem 0rem 1rem rgba(39, 39, 52, 0.06)",
         flexCenterCenter: "column",
         marginBottom: "2rem",
@@ -532,6 +541,11 @@ const styles = {
         lg: {
           width: "11.88rem",
           marginBottom: 0,
+        },
+        a: {
+          width: "100%",
+          flexCenterCenter: "column",
+          padding: "1.96rem 0 1.5rem 0",
         },
         img: {
           height: "4rem",
