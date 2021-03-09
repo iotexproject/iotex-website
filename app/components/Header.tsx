@@ -115,7 +115,7 @@ export const Header = observer((props) => {
           <a href="https://iott.network/about">{lang.t("Vision")}</a>
         </Menu.Item>
         <Menu.Item key="Team">
-          <a href="https://iotex.io/team/">{lang.t("Team")}</a>
+          <Link href="/team/">{lang.t("Team")}</Link>
         </Menu.Item>
         <Menu.Item key="Research">
           <Link href="/research">{lang.t("Research")}</Link>

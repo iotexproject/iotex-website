@@ -30,7 +30,7 @@ const Footer: BlitzPage = observer(() => {
           </div>
           <div className="menu-box">
             <h3>{lang.t("about_us")}</h3>
-            <a href="https://iotex.io/team">{lang.t("team")}</a>
+            <Link href="/team">{lang.t("team")}</Link>
             <a href="https://iotex.io/brand-ambassador">{lang.t("brand_ambassador")}</a>
             <a href="https://forum.iotex.io/">{lang.t("forum")}</a>
           </div>
@@ -68,9 +68,9 @@ const Footer: BlitzPage = observer(() => {
         </div>
         <div className="copyright">
           <span>© {new Date().getFullYear()} IoTeX </span>
-          <a href="https://iotex.io/policy">
-            {lang.t("terms_of_use")} & {lang.t("privacy_policy")}
-          </a>
+          <Link href="/policy">
+            {`${lang.t("terms_of_use")} & ${lang.t("privacy_policy")}`}
+          </Link>
         </div>
       </div>
     </div>

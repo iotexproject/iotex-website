@@ -14,9 +14,7 @@ const FAQ: BlitzPage = observer(() => {
 
   const scrollToAnchor = (anchorName) => {
     if (anchorName) {
-      // 找到锚点
       let anchorElement = document.getElementById(anchorName);
-      // 如果对应id的锚点存在，就跳转到锚点
       if(anchorElement) { anchorElement.scrollIntoView({block: 'start', behavior: 'smooth'}); }
     }
   }
@@ -58,7 +56,7 @@ const FAQ: BlitzPage = observer(() => {
                   keyArr={[
                     {
                       word: lang.t("faq.block1.keyword1"),
-                      link: "https://iotex.io/team"
+                      link: "/team"
                     },
                     {
                       word: lang.t("faq.block1.keyword2"),
@@ -258,7 +256,7 @@ const FAQ: BlitzPage = observer(() => {
                   keyArr={[
                     {
                       word: lang.t("faq.block8.keyword1"),
-                      link: "https://iotex.io/halo"
+                      link: "/halo"
                     }
                   ]}
                   markActiveStyle={{ color: "#43C9BA" }}

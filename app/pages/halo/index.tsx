@@ -55,7 +55,8 @@ const Halo: BlitzPage = observer(() => {
         <div className="mw-container haloBannerContent">
           <div className="infos">
             <div className="title">
-              {lang.t("halo.title1")}&nbsp;<span>{lang.t("halo.title2")}</span>&nbsp;
+              {lang.t("halo.title1")}
+              <br/><span>{lang.t("halo.title2")}</span><br/>
               {lang.t("halo.title3")}
             </div>
             <button className={styles.yellowBtn}>
