@@ -12,6 +12,13 @@ import Layout from "../layouts/Layout"
 const Home: BlitzPage = observer(() => {
   const { lang } = useStore()
 
+  const scrollToAnchor = (anchorName) => {
+    if (anchorName) {
+      let anchorElement = document.getElementById(anchorName);
+      if(anchorElement) { anchorElement.scrollIntoView({block: 'start', behavior: 'smooth'}); }
+    }
+  }
+
   return (
     <Layout title={lang.t("home.title")}>
       <div className={styles.iotexAlert}>
@@ -45,7 +52,7 @@ const Home: BlitzPage = observer(() => {
             <img src="images/banner_txt.gif" alt="" />
           </div>
           <div className="down_btn">
-            <a href="#friendShip">
+            <a onClick={() => {scrollToAnchor("friendShip")}}>
               <DownCircleOutlined style={{ fontSize: 30, color: "#fff" }} />
             </a>
           </div>
