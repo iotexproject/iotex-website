@@ -203,6 +203,10 @@ const styles = {
           display: "flex",
           justifyContent: "flex-end",
         },
+        ul: {
+          width: "100%",
+          textAlign: "right",
+        },
       },
       ".mobile-menus": {
         display: "block",
