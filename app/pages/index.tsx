@@ -169,7 +169,7 @@ const Home: BlitzPage = observer(() => {
                   </a>
                 </li>
                 <li>
-                  <a href="" target="_blank">
+                  <a href="https://github.com/iotexproject/iotex-did" target="_blank">
                     {lang.t("own.links3")}
                     <img src="images/right-arrow.png" alt="" />
                   </a>
