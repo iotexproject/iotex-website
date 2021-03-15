@@ -13,25 +13,22 @@ const Footer: BlitzPage = observer(() => {
         <div className="menu-wrapper">
           <div className="menu-box">
             <h3>{lang.t("resource")}</h3>
-            <a href="https://iotex.io/developers">{lang.t("ecosystem")}</a>
-            <a href="https://iotex.io/secure-hardware">{lang.t("secure_ardware")}</a>
-            <a href="https://iotex.io/community-resources">{lang.t("community")}</a>
+            <a href="https://onboard.iotex.io/">{lang.t("Onboarding Pack")}</a>
+            <a href="https://ecosystem.iotex.io/">{lang.t("ecosystem")}</a>
+            <a href="https://iott.network/">{lang.t("reimagined.links3")}</a>
             <Link href="/research">{lang.t("research_papers")}</Link>
             <a href="https://member.iotex.io/">{lang.t("delegate_program")}</a>
-            <a href="https://www.iotex.io/charity">{lang.t("charity_program")}</a>
           </div>
           <div className="menu-box">
             <h3>{lang.t("develop")}</h3>
             <a href="https://github.com/iotexproject">{lang.t("github")}</a>
-            <a href="https://docs.iotex.io/">{lang.t("documentations")}</a>
+            <a href="https://docs.iotex.io/">{lang.t("docs")}</a>
             <a href="https://iotexscan.io/">{lang.t("explorer")}</a>
             <a href="https://iopay.iotex.io/">{lang.t("wallet")}</a>
-            <a href="https://docs.iotex.io/docs/libraries-and-tools.html">{lang.t("tools")}</a>
           </div>
           <div className="menu-box">
             <h3>{lang.t("about_us")}</h3>
             <Link href="/team">{lang.t("team")}</Link>
-            <a href="https://iotex.io/brand-ambassador">{lang.t("brand_ambassador")}</a>
             <a href="https://forum.iotex.io/">{lang.t("forum")}</a>
           </div>
           <div className="logo-box">
@@ -68,9 +65,7 @@ const Footer: BlitzPage = observer(() => {
         </div>
         <div className="copyright">
           <span>© {new Date().getFullYear()} IoTeX </span>
-          <Link href="/policy">
-            {`${lang.t("terms_of_use")} & ${lang.t("privacy_policy")}`}
-          </Link>
+          <Link href="/policy">{`${lang.t("terms_of_use")} & ${lang.t("privacy_policy")}`}</Link>
         </div>
       </div>
     </div>

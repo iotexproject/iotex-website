@@ -25,10 +25,6 @@ const ForInvestors: BlitzPage = observer(() => {
                 sourceStr={lang.t("investors.banner.tips")}
                 keyArr={[
                   {
-                    word: lang.t("investors.banner.tips.keyword1"),
-                    link: "https://iotex.io/mainnet",
-                  },
-                  {
                     word: lang.t("investors.banner.tips.keyword2"),
                     link: "https://iopay.iotex.io/",
                   },
