@@ -159,6 +159,19 @@ const Team: BlitzPage = observer(() => {
       intros: lang.t("saul.desc"),
     },
     {
+      name: lang.t("seedlet.name"),
+      avatar: "images/team/seedlet.png",
+      links: [
+        {
+          src: "images/team/icon_linkedin.png",
+          href: "https://www.linkedin.com/in/zhi-zhong-a3660354/",
+        },
+        { src: "images/team/icon_gitHub.png", href: "https://github.com/CoderZhi" },
+      ],
+      job: lang.t("seedlet.research"),
+      intros: lang.t("seedlet.desc"),
+    },
+    {
       name: lang.t("dorothy.name"),
       avatar: "images/team/Dorothy.png",
       links: [
@@ -269,19 +282,6 @@ const Team: BlitzPage = observer(() => {
       ],
       job: lang.t("le.research"),
       intros: lang.t("le.desc"),
-    },
-    {
-      name: lang.t("seedlet.name"),
-      avatar: "images/team/zhi.png",
-      links: [
-        {
-          src: "images/team/icon_linkedin.png",
-          href: "https://www.linkedin.com/in/zhi-zhong-a3660354/",
-        },
-        { src: "images/team/icon_gitHub.png", href: "https://github.com/CoderZhi" },
-      ],
-      job: lang.t("seedlet.research"),
-      intros: lang.t("seedlet.desc"),
     },
     {
       name: lang.t("heslei.name"),
@@ -474,6 +474,7 @@ const styles = {
         },
         ".avatar": {
           width: "100%",
+          objectFit: "cover"
         },
         ".name": {
           fontSize: "1.25rem",
