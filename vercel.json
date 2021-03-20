@@ -5,6 +5,10 @@
     {
       "source": "/reference-architecture",
       "destination": "https://iotex.b-cdn.net/docs/reference-architecture.pdf"
+    },
+    {
+      "source": "/images/:match*",
+      "destination": "https://githubproxy.b-cdn.net/iotexproject/iotex-website/main/public/images/:match*"
     }
   ]
 }
