@@ -9,6 +9,10 @@
     {
       "source": "/images/:match*",
       "destination": "https://githubproxy.b-cdn.net/iotexproject/iotex-website/main/public/images/:match*"
+    },
+    {
+      "source": "/exchanges",
+      "destination": "https://ecosystem.iotex.io/exchanges-wallets"
     }
   ]
 }
