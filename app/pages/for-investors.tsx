@@ -53,7 +53,7 @@ const ForInvestors: BlitzPage = observer(() => {
                 keyArr={[
                   {
                     word: lang.t("investors.article.tips1.keyword"),
-                    link: "https://ecosystem.iotex.io/exchanges-walelts",
+                    link: "https://ecosystem.iotex.io/exchanges-wallets",
                   },
                 ]}
                 markActiveStyle={{ color: "#43C9BA" }}
