@@ -459,7 +459,7 @@ const FAQ: BlitzPage = observer(() => {
                   keyArr={[
                     {
                       word: lang.t("faq.block13.keyword1"),
-                      link: "https://res.cloudinary.com/dokc3pa1x/image/upload/v1559623484/Research%20Paper/Academic_Paper_Yellow_Paper.pdf"
+                      link: "http://files.iotex.io/publications/Academic_Paper_Yellow_Paper.pdf"
                     }
                   ]}
                   markActiveStyle={{ color: "#43C9BA" }}

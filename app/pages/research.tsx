@@ -35,13 +35,13 @@ const Research: BlitzPage = observer(() => {
               <div className="title">{lang.t("research.block1.title")}</div>
               <div className="caption">{lang.t("research.block1.caption1")}</div>
               <div className="action-box">
-                <a className="btn" href="https://v1.iotex.io/white-paper" target="_blank">{lang.t("research.read_now")}</a>
+                <a className="btn" href="https://iotex.io/white-paper" target="_blank">{lang.t("research.read_now")}</a>
                 <div className="link-box">
-                  <a className="link" href="https://res.cloudinary.com/dokc3pa1x/image/upload/v1559607297/Research%20Paper/White%20Papeer/IoTeX_Whitepaper_1.5_RU.pdf" target="_blank">RU</a>
-                  <a className="link" href="https://res.cloudinary.com/dokc3pa1x/image/upload/v1559607295/Research%20Paper/White%20Papeer/IoTeX_Whitepaper_1.4_ZH_CN.pdf" target="_blank">ZH</a>
-                  <a className="link" href="https://res.cloudinary.com/dokc3pa1x/image/upload/v1559607305/Research%20Paper/White%20Papeer/IoTeX_Whitepaper_1.5_KO.pdf" target="_blank">KO</a>
-                  <a className="link" href="https://res.cloudinary.com/dokc3pa1x/image/upload/v1559607309/Research%20Paper/White%20Papeer/IoTeX_Whitepaper_1.5_IT.pdf" target="_blank">IT</a>
-                  <a className="link" href="https://res.cloudinary.com/dokc3pa1x/image/upload/v1559625654/Research%20Paper/White%20Papeer/Whitepaper_1.5_PT-BR.pdf" target="_blank">PT</a>
+                  <a className="link" href="http://files.iotex.io/publications/IoTeX_Whitepaper_1.4_ZH_CN.pdf" target="_blank">ZH</a>
+                  <a className="link" href="http://files.iotex.io/publications/IoTeX_Whitepaper_1.5_RU.pdf" target="_blank">RU</a>
+                  <a className="link" href="http://files.iotex.io/publications/IoTeX_Whitepaper_1.5_KO.pdf" target="_blank">KO</a>
+                  <a className="link" href="http://files.iotex.io/publications/IoTeX_Whitepaper_1.5_IT.pdf" target="_blank">IT</a>
+                  <a className="link" href="http://files.iotex.io/publications/IoTeX_Whitepaper_1.5_PT-BR.pdf" target="_blank">PT</a>
                 </div>
               </div>
             </div>
@@ -52,7 +52,7 @@ const Research: BlitzPage = observer(() => {
               <div className="title">{lang.t("research.block2.title")}</div>
               <div className="caption">{lang.t("research.block2.caption1")}</div>
               <div className="action-box">
-                <a className="btn" href="https://res.cloudinary.com/dokc3pa1x/image/upload/v1559623484/Research%20Paper/Academic_Paper_Yellow_Paper.pdf" target="_blank">{lang.t("research.read_now")}</a>
+                <a className="btn" href="http://files.iotex.io/publications/Academic_Paper_Yellow_Paper.pdf" target="_blank">{lang.t("research.read_now")}</a>
               </div>
             </div>
             <img className="img-right" src="/images/research-block2.png" alt="" />
@@ -63,7 +63,7 @@ const Research: BlitzPage = observer(() => {
               <div className="title">{lang.t("research.block3.title")}</div>
               <div className="caption">{lang.t("research.block3.caption1")}</div>
               <div className="action-box">
-                <a className="btn" href="https://res.cloudinary.com/dokc3pa1x/image/upload/v1559623278/Research%20Paper/PBFT.pdf" target="_blank">{lang.t("research.read_now")}</a>
+                <a className="btn" href="http://files.iotex.io/publications/PBFT.pdf" target="_blank">{lang.t("research.read_now")}</a>
               </div>
             </div>
           </div>
@@ -74,7 +74,7 @@ const Research: BlitzPage = observer(() => {
               <div className="caption">{lang.t("research.block4.caption1")}</div>
               <div className="caption" style={{marginTop: "1rem"}}>{lang.t("research.block4.caption2")}</div>
               <div className="action-box">
-                <a className="btn" href="https://res.cloudinary.com/dokc3pa1x/image/upload/v1559607338/Research%20Paper/IoTeX_DKSAP_IOT_EN.pdf" target="_blank">{lang.t("research.read_now")}</a>
+                <a className="btn" href="http://files.iotex.io/publications/IoTeX_DKSAP_IOT_EN.pdf" target="_blank">{lang.t("research.read_now")}</a>
               </div>
             </div>
             <img className="img-right" src="/images/research-block4.png" alt="" />
@@ -116,7 +116,7 @@ const Research: BlitzPage = observer(() => {
               <div className="title">{lang.t("research.block8.title")}</div>
               <div className="caption">{lang.t("research.block8.caption1")}</div>
               <div className="action-box">
-                <a className="btn" href="https://cdn.iotex.io/docs/ucam-whitepaper.pdf" target="_blank">{lang.t("research.read_now")}</a>
+                <a className="btn" href="http://files.iotex.io/publications/ucam-whitepaper.pdf" target="_blank">{lang.t("research.read_now")}</a>
               </div>
             </div>
             <img className="img-right" src="/images/research-block8.png" alt="" />
