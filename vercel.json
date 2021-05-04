@@ -1,7 +1,7 @@
 {
   "redirects": [
     { "source": "/pebble-tracker", "destination": "/pebble" },
-    { "source": "/white-paper", "destination": "https://v1.iotex.io/white-paper" },
+    { "source": "/white-paper", "destination": "http://files.iotex.io/publications/IoTeX_Whitepaper_1.5_EN.pdf" },
     {
       "source": "/reference-architecture",
       "destination": "https://iotex.b-cdn.net/docs/reference-architecture.pdf"
