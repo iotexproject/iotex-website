@@ -1,6 +1,8 @@
 {
   "redirects": [
     { "source": "/pebble-tracker", "destination": "/pebble" },
+    { "source": "/discord", "destination": "https://discord.gg/KTHUKBBW87" },
+    { "source": "/devdiscord", "destination": "https://discord.gg/q5eYde2CU7" },
     { "source": "/white-paper", "destination": "http://files.iotex.io/publications/IoTeX_Whitepaper_1.5_EN.pdf" },
     {
       "source": "/reference-architecture",
