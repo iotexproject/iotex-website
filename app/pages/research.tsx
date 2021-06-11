@@ -16,7 +16,7 @@ const Research: BlitzPage = observer(() => {
   return (
     <Layout title={"Research"}>
       <div className={globalStyles.container}>
-        <Header/>
+        <Header />
         <div className={`${styles.banner}`}>
           <div className={`${styles.mainContainer} banner-wrapper`}>
             <div className="left">
@@ -24,7 +24,7 @@ const Research: BlitzPage = observer(() => {
               <div className="caption">{lang.t("research.banner.caption1")}</div>
             </div>
             <div className="right">
-              <img src="/images/research-banner.png" alt=""/>
+              <img src="/images/research-banner.png" alt="" />
             </div>
           </div>
         </div>
@@ -35,13 +35,45 @@ const Research: BlitzPage = observer(() => {
               <div className="title">{lang.t("research.block1.title")}</div>
               <div className="caption">{lang.t("research.block1.caption1")}</div>
               <div className="action-box">
-                <a className="btn" href="https://iotex.io/white-paper" target="_blank">{lang.t("research.read_now")}</a>
+                <a className="btn" href="https://iotex.io/white-paper" target="_blank">
+                  {lang.t("research.read_now")}
+                </a>
                 <div className="link-box">
-                  <a className="link" href="http://files.iotex.io/publications/IoTeX_Whitepaper_1.4_ZH_CN.pdf" target="_blank">ZH</a>
-                  <a className="link" href="http://files.iotex.io/publications/IoTeX_Whitepaper_1.5_RU.pdf" target="_blank">RU</a>
-                  <a className="link" href="http://files.iotex.io/publications/IoTeX_Whitepaper_1.5_KO.pdf" target="_blank">KO</a>
-                  <a className="link" href="http://files.iotex.io/publications/IoTeX_Whitepaper_1.5_IT.pdf" target="_blank">IT</a>
-                  <a className="link" href="http://files.iotex.io/publications/IoTeX_Whitepaper_1.5_PT-BR.pdf" target="_blank">PT</a>
+                  <a
+                    className="link"
+                    href="https://files.iotex.io/publications/IoTeX_Whitepaper_1.4_ZH_CN.pdf"
+                    target="_blank"
+                  >
+                    ZH
+                  </a>
+                  <a
+                    className="link"
+                    href="https://files.iotex.io/publications/IoTeX_Whitepaper_1.5_RU.pdf"
+                    target="_blank"
+                  >
+                    RU
+                  </a>
+                  <a
+                    className="link"
+                    href="https://files.iotex.io/publications/IoTeX_Whitepaper_1.5_KO.pdf"
+                    target="_blank"
+                  >
+                    KO
+                  </a>
+                  <a
+                    className="link"
+                    href="https://files.iotex.io/publications/IoTeX_Whitepaper_1.5_IT.pdf"
+                    target="_blank"
+                  >
+                    IT
+                  </a>
+                  <a
+                    className="link"
+                    href="https://files.iotex.io/publications/IoTeX_Whitepaper_1.5_PT-BR.pdf"
+                    target="_blank"
+                  >
+                    PT
+                  </a>
                 </div>
               </div>
             </div>
@@ -52,7 +84,13 @@ const Research: BlitzPage = observer(() => {
               <div className="title">{lang.t("research.block2.title")}</div>
               <div className="caption">{lang.t("research.block2.caption1")}</div>
               <div className="action-box">
-                <a className="btn" href="http://files.iotex.io/publications/Academic_Paper_Yellow_Paper.pdf" target="_blank">{lang.t("research.read_now")}</a>
+                <a
+                  className="btn"
+                  href="https://files.iotex.io/publications/Academic_Paper_Yellow_Paper.pdf"
+                  target="_blank"
+                >
+                  {lang.t("research.read_now")}
+                </a>
               </div>
             </div>
             <img className="img-right" src="/images/research-block2.png" alt="" />
@@ -63,7 +101,13 @@ const Research: BlitzPage = observer(() => {
               <div className="title">{lang.t("research.block3.title")}</div>
               <div className="caption">{lang.t("research.block3.caption1")}</div>
               <div className="action-box">
-                <a className="btn" href="http://files.iotex.io/publications/PBFT.pdf" target="_blank">{lang.t("research.read_now")}</a>
+                <a
+                  className="btn"
+                  href="https://files.iotex.io/publications/PBFT.pdf"
+                  target="_blank"
+                >
+                  {lang.t("research.read_now")}
+                </a>
               </div>
             </div>
           </div>
@@ -72,9 +116,17 @@ const Research: BlitzPage = observer(() => {
             <div className="caption-box">
               <div className="title">{lang.t("research.block4.title")}</div>
               <div className="caption">{lang.t("research.block4.caption1")}</div>
-              <div className="caption" style={{marginTop: "1rem"}}>{lang.t("research.block4.caption2")}</div>
+              <div className="caption" style={{ marginTop: "1rem" }}>
+                {lang.t("research.block4.caption2")}
+              </div>
               <div className="action-box">
-                <a className="btn" href="http://files.iotex.io/publications/IoTeX_DKSAP_IOT_EN.pdf" target="_blank">{lang.t("research.read_now")}</a>
+                <a
+                  className="btn"
+                  href="https://files.iotex.io/publications/IoTeX_DKSAP_IOT_EN.pdf"
+                  target="_blank"
+                >
+                  {lang.t("research.read_now")}
+                </a>
               </div>
             </div>
             <img className="img-right" src="/images/research-block4.png" alt="" />
@@ -85,7 +137,13 @@ const Research: BlitzPage = observer(() => {
               <div className="title">{lang.t("research.block5.title")}</div>
               <div className="caption">{lang.t("research.block5.caption1")}</div>
               <div className="action-box">
-                <a className="btn" href="https://ieeexplore.ieee.org/document/8977444" target="_blank">{lang.t("research.read_now")}</a>
+                <a
+                  className="btn"
+                  href="https://ieeexplore.ieee.org/document/8977444"
+                  target="_blank"
+                >
+                  {lang.t("research.read_now")}
+                </a>
               </div>
             </div>
           </div>
@@ -95,7 +153,13 @@ const Research: BlitzPage = observer(() => {
               <div className="title">{lang.t("research.block6.title")}</div>
               <div className="caption">{lang.t("research.block6.caption1")}</div>
               <div className="action-box">
-                <a className="btn" href="https://ieeexplore.ieee.org/document/8977822" target="_blank">{lang.t("research.read_now")}</a>
+                <a
+                  className="btn"
+                  href="https://ieeexplore.ieee.org/document/8977822"
+                  target="_blank"
+                >
+                  {lang.t("research.read_now")}
+                </a>
               </div>
             </div>
             <img className="img-right" src="/images/research-block6.png" alt="" />
@@ -106,7 +170,13 @@ const Research: BlitzPage = observer(() => {
               <div className="title">{lang.t("research.block7.title")}</div>
               <div className="caption">{lang.t("research.block7.caption1")}</div>
               <div className="action-box">
-                <a className="btn" href="https://ieeexplore.ieee.org/document/9221130" target="_blank">{lang.t("research.read_now")}</a>
+                <a
+                  className="btn"
+                  href="https://ieeexplore.ieee.org/document/9221130"
+                  target="_blank"
+                >
+                  {lang.t("research.read_now")}
+                </a>
               </div>
             </div>
           </div>
@@ -116,13 +186,19 @@ const Research: BlitzPage = observer(() => {
               <div className="title">{lang.t("research.block8.title")}</div>
               <div className="caption">{lang.t("research.block8.caption1")}</div>
               <div className="action-box">
-                <a className="btn" href="http://files.iotex.io/publications/ucam-whitepaper.pdf" target="_blank">{lang.t("research.read_now")}</a>
+                <a
+                  className="btn"
+                  href="https://files.iotex.io/publications/ucam-whitepaper.pdf"
+                  target="_blank"
+                >
+                  {lang.t("research.read_now")}
+                </a>
               </div>
             </div>
             <img className="img-right" src="/images/research-block8.png" alt="" />
           </div>
         </div>
-        <Footer/>
+        <Footer />
       </div>
     </Layout>
   )
@@ -135,7 +211,7 @@ const styles = {
     position: "relative",
     width: "80%",
     maxWidth: "$mainW",
-    margin: "0 auto"
+    margin: "0 auto",
   }),
   banner: css({
     background: "$bg3",
@@ -147,14 +223,13 @@ const styles = {
 
         ".left": {
           width: "80%",
-          pb: "1.875rem"
+          pb: "1.875rem",
         },
 
         ".right": {
-          width: "100%"
+          width: "100%",
         },
-
-      }
+      },
     },
 
     ".banner-wrapper": {
@@ -169,28 +244,26 @@ const styles = {
         ".title": {
           fontHeebo: 200,
           fontSize: "2.75rem",
-          pb: "0.625rem"
+          pb: "0.625rem",
         },
 
         ".caption": {
           width: "",
           fontHeebo: 200,
-          fontSize: "0.875rem"
+          fontSize: "0.875rem",
         },
-
       },
 
       ".right": {
         width: "50%",
         img: {
-          width: "100%"
-        }
+          width: "100%",
+        },
       },
-    }
-
+    },
   }),
   contentWrapper: css({
-    background: "$bg3"
+    background: "$bg3",
   }),
   contentBox: css({
     maxWidth: "1100px !important",
@@ -214,11 +287,11 @@ const styles = {
       },
 
       ".img-top": {
-        display: "block"
+        display: "block",
       },
 
       ".img-right": {
-        display: "none"
+        display: "none",
       },
 
       ".caption-box": {
@@ -226,11 +299,11 @@ const styles = {
         mt: "1.875rem",
 
         ".title": {
-          pb: 0
+          pb: 0,
         },
 
         ".caption": {
-          display: "none"
+          display: "none",
         },
 
         ".action-box": {
@@ -243,12 +316,11 @@ const styles = {
             mt: "1.875rem",
 
             ".link": {
-              mr: "1rem"
-            }
-
+              mr: "1rem",
+            },
           },
-        }
-      }
+        },
+      },
     },
 
     img: {
@@ -274,7 +346,7 @@ const styles = {
       ".title": {
         fontHeebo: 300,
         fontSize: "1.875rem",
-        pb: "1.5rem"
+        pb: "1.5rem",
       },
 
       ".caption": {
@@ -299,20 +371,14 @@ const styles = {
         },
 
         ".link-box": {
-          display: "inline-block"
+          display: "inline-block",
         },
 
         ".link": {
           textDecoration: "underline",
-          mr: 30
-        }
-
-
-      }
-
-
-    }
-
-
-  })
+          mr: 30,
+        },
+      },
+    },
+  }),
 }
