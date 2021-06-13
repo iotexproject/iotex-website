@@ -11,25 +11,29 @@ module.exports = {
   ],
   async redirects() {
     return [
-      { source: "/pebble-tracker", destination: "/pebble" },
-      { source: "/discord", destination: "https://discord.gg/KTHUKBBW87" },
-      { source: "/devdiscord", destination: "https://discord.gg/q5eYde2CU7" },
+      { source: "/pebble-tracker", destination: "/pebble", permanent: false },
+      { source: "/discord", destination: "https://discord.gg/KTHUKBBW87", permanent: false },
+      { source: "/devdiscord", destination: "https://discord.gg/q5eYde2CU7", permanent: false },
       {
         source: "/white-paper",
         destination: "http://files.iotex.io/publications/IoTeX_Whitepaper_1.5_EN.pdf",
+        permanent: false,
       },
       {
         source: "/reference-architecture",
         destination: "https://iotex.b-cdn.net/docs/reference-architecture.pdf",
+        permanent: false,
       },
       {
         source: "/images/:match*",
         destination:
           "https://github.iotex.io/iotexproject/iotex-website/main/public/images/:match*",
+        permanent: false,
       },
       {
         source: "/exchanges",
         destination: "https://ecosystem.iotex.io/exchanges-wallets",
+        permanent: false,
       },
     ]
   },
