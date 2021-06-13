@@ -1,6 +1,7 @@
 module.exports = {
   experimental: {
     reactMode: "legacy",
+    isomorphicResolverImports: true,
   },
   middleware: [
     (req, res, next) => {
@@ -9,6 +10,7 @@ module.exports = {
       return next()
     },
   ],
+
   async redirects() {
     return [
       { source: "/pebble-tracker", destination: "/pebble", permanent: false },
