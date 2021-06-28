@@ -13,6 +13,10 @@ module.exports = {
   async rewrites() {
     return [
       {
+        source: "/blog",
+        destination: "https://iotex-blog.onrender.com/blog/",
+      },
+      {
         source: "/blog/:match*",
         destination: "https://iotex-blog.onrender.com/blog/:match*",
       },
