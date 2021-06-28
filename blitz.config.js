@@ -14,7 +14,7 @@ module.exports = {
     return [
       {
         source: "/blog/:match*",
-        destination: "https://iotex.io/blog/:match*",
+        destination: "https://iotex-blog.onrender.com/blog/:match*",
       },
     ]
   },
