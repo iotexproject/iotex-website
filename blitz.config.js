@@ -14,7 +14,7 @@ module.exports = {
     return [
       {
         source: "/blog/:match*",
-        destination: "https://blog.iotex.io/:match*",
+        destination: "https://iotex.io/blog/:match*",
       },
     ]
   },
