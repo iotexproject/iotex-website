@@ -27,6 +27,16 @@ module.exports = {
         permanent: false,
       },
       {
+        source: "/blog",
+        destination: "https://iotex-blog.onrender.com/",
+        permanent: false,
+      },
+      {
+        source: "/blog/:match*",
+        destination: "https://iotex-blog.onrender.com/:match*",
+        permanent: false,
+      },
+      {
         source: "/images/:match*",
         destination:
           "https://github.iotex.io/iotexproject/iotex-website/main/public/images/:match*",
