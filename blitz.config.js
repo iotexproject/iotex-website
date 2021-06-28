@@ -18,7 +18,7 @@ module.exports = {
       },
       {
         source: "/blog/:match*",
-        destination: "https://iotex-blog.onrender.com/blog/:match*/",
+        destination: "https://iotex-blog.onrender.com/blog/:match*",
       },
     ]
   },
