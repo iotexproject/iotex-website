@@ -10,18 +10,7 @@ module.exports = {
       return next()
     },
   ],
-  async rewrites() {
-    return [
-      {
-        source: "/blog",
-        destination: "https://iotex-blog.onrender.com/blog/",
-      },
-      {
-        source: "/blog/:match*",
-        destination: "https://iotex-blog.onrender.com/blog/:match*",
-      },
-    ]
-  },
+
   async redirects() {
     return [
       { source: "/pebble-tracker", destination: "/pebble", permanent: false },
