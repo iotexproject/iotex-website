@@ -10,7 +10,14 @@ module.exports = {
       return next()
     },
   ],
-
+  async rewrites() {
+    return [
+      {
+        source: "/blog/:match*",
+        destination: "https://blog.iotex.io/:match*",
+      },
+    ]
+  },
   async redirects() {
     return [
       { source: "/pebble-tracker", destination: "/pebble", permanent: false },
@@ -24,16 +31,6 @@ module.exports = {
       {
         source: "/reference-architecture",
         destination: "https://iotex.b-cdn.net/docs/reference-architecture.pdf",
-        permanent: false,
-      },
-      {
-        source: "/blog",
-        destination: "https://iotex-blog.onrender.com/",
-        permanent: false,
-      },
-      {
-        source: "/blog/:match*",
-        destination: "https://iotex-blog.onrender.com/:match*",
         permanent: false,
       },
       {
