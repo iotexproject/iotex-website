@@ -1,3 +1,1 @@
-# IoTeX homepage website  (working in progress)
-
-https://iotex.io 
+# IoTeX website (V2, deprecated)
